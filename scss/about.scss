@@ -1,3 +1,50 @@
-#testButton {
-    @include site-button();
+// #testButton {
+//     @include site-button();
+// }
+
+.aboutSection {
+  max-width: 1920px;
+  height: 700px;
+  display: flex;
+  //   align-items: center;
+  justify-content: space-evenly;
+  padding: 0px 90px 0px 70px;
+  margin-top: 180px;
+
+  .abtBookImg {
+    // width: 393px;
+    // height: 587px;
+    // border: 2px solid red;
+
+    img {
+      width: 393px;
+      height: 587px;
+      padding: 40px;
+    }
+  }
+
+  .abtInfoContain {
+    width: 1134px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    flex-direction: column;
+    // border: 2px solid orange;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-top: 40px;
+
+    .aboutHeader {
+      font-size: 32px;
+      margin-bottom: 41px;
+    }
+    .aboutSubHeader {
+      font-size: 26px;
+      margin-bottom: 70px;
+    }
+    .aboutContent {
+      font-size: 16px;
+    }
+  }
 }
