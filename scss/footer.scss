@@ -1,0 +1,42 @@
+footer {
+  height: 92px;
+  background-color: $site-blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 25px 0px 50px;
+
+  .copy {
+    color: $site-white;
+  }
+
+  .footerLinks {
+    width: 210px;
+    // border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      color: $site-white;
+    }
+  }
+
+  .footerSocials {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    a {
+      text-decoration: none;
+      .social {
+        img {
+          width: 44px;
+          height: 44px;
+          margin-right: 35px;
+        }
+      }
+    }
+  }
+}

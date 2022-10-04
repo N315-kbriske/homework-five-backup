@@ -5,6 +5,45 @@ nav {
   justify-content: space-evenly;
   border-bottom: 1px solid black;
 
+  .logoLinkContain {
+    width: 202px;
+    height: 73px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .logoImage {
+      img {
+        width: 73px;
+        height: 73px;
+      }
+    }
+    .logoLink {
+    }
+  }
+
+  .searchContain {
+    // width: 604px;
+    // height: 44px;
+    // border: none;
+    // background-color: $site-blue;
+    // opacity: 35%;
+
+    i {
+      position: absolute;
+      padding: 12px;
+    }
+
+    #search {
+      width: 604px;
+      height: 44px;
+      background-color: $site-blue;
+      opacity: 35%;
+      border: none;
+      color: black;
+    }
+  }
+
   a {
     color: black;
     text-decoration: none;
