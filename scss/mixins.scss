@@ -1,0 +1,10 @@
+@mixin site-button($cornerRadius: 30px, $btnPadding: 8px 19px) {
+  background-color: $site-background;
+  padding: $btnPadding;
+  border-radius: $cornerRadius;
+  color: white;
+  cursor: pointer;
+  font-family: Gill;
+  font-size: 15px;
+  margin-top: 56px;
+}
