@@ -281,10 +281,92 @@ footer .footerSocials a .social img {
   justify-content: space-evenly;
   flex-direction: column;
 }
-.blogContainer .blogSection {
+.blogContainer .blogHeadlines {
+  width: 842px;
+  height: 463px;
+  border: 5px dotted brown;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.blogContainer .blogHeadlines .blogHeadlineWrapper {
+  color: #ffffff;
+  width: 427px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.blogContainer .blogHeadlines .blogHeadlineWrapper .blogTitle {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.blogContainer .blogHeadlines .blogHeadlineWrapper .blogParagraph {
+  text-align: center;
+  font-size: 17px;
+}
+.blogContainer .sectionImage1 {
+  height: 463px;
+  width: 622px;
+  margin-right: 110px;
+  background-image: url(/assets/images/open-book-blog.jpg);
+  background-size: cover;
+}
+.blogContainer .sectionImage2 {
+  height: 463px;
+  width: 622px;
+  margin-right: 110px;
+  background-image: url(/assets/images/ereading-blog.jpg);
+  background-size: cover;
+}
+.blogContainer .blogSection1 {
   height: 463px;
   width: 1464px;
   background-color: #587c83;
+  margin-top: 117px;
+  margin-bottom: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.blogContainer .blogSection1 .twoPicturesSection1 {
+  height: 380px;
+  width: 732px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.blogContainer .blogSection1 .twoPicturesSection1 .michelleObamaImg {
+  width: 250px;
+  height: 380px;
+  background-image: url(/assets/images/becoming.jpg);
+  background-size: cover;
+}
+.blogContainer .blogSection1 .twoPicturesSection1 .violaDavisImg {
+  width: 250px;
+  height: 380px;
+  background-image: url(/assets/images/finding-me.jpg);
+  background-size: cover;
+}
+.blogContainer .blogSection2 {
+  height: 463px;
+  width: 1464px;
+  background-color: #587c83;
+  margin-bottom: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.blogContainer .blogSection3 {
+  height: 463px;
+  width: 1464px;
+  background-color: #587c83;
+  margin-bottom: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 /*# sourceMappingURL=styles.css.map */

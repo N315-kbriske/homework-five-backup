@@ -8,11 +8,173 @@
     
     flex-direction: column;
 
-    .blogSection {
+
+    .blogHeadlines {
+
+        width: 842px;
+        height: 463px;
+
+        border: 5px dotted brown;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+
+        .blogHeadlineWrapper {
+            color: $site-white;
+            width: 427px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            flex-direction: column;
+
+            .blogTitle {
+                font-size: 28px;
+                font-weight: bold;
+                margin-bottom: 50px;
+            }
+    
+            .blogParagraph {
+                text-align: center;
+                font-size: 17px;
+    
+            }
+    
+            .blogBtn {
+    
+            }
+        }
+    }
+
+    .sectionImage1 {
+        height: 463px;
+        width: 622px;
+
+        //border: 5px dotted black;
+
+        margin-right: 110px;
+        
+
+        background-image: url(/assets/images/open-book-blog.jpg);
+        background-size: cover;
+
+        
+
+
+    }
+
+    .sectionImage2 {
+        height: 463px;
+        width: 622px;
+
+       // border: 5px dotted black;
+
+        margin-right: 110px;
+
+        background-image: url(/assets/images/ereading-blog.jpg);
+        background-size: cover;
+
+        
+
+
+    }
+
+
+    .blogSection1 {
         height: 463px;
         width: 1464px;
 
         background-color: $site-blue;
+
+        margin-top: 117px;
+        margin-bottom: 125px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        //padding: 120px;
+
+        .twoPicturesSection1 {
+
+            height: 380px;
+            width: 732px;
+    
+            //border: 5px dotted black;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+            .michelleObamaImg {
+                width: 250px;
+                height: 380px;
+
+                background-image: url(/assets/images/becoming.jpg);
+                background-size: cover;
+            }
+
+            .violaDavisImg {
+                width: 250px;
+                height: 380px;
+
+                background-image: url(/assets/images/finding-me.jpg);
+                background-size: cover;
+
+            }
+        }
+
+
+        .blogHeadlines1 {
+
+
+
+
+        }
+        
+
+
+    }
+
+    .blogSection2 {
+        height: 463px;
+        width: 1464px;
+
+        background-color: $site-blue;
+
+        
+        margin-bottom: 125px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+
+
+
+        
+        
+    }
+
+    .blogSection3 {
+        height: 463px;
+        width: 1464px;
+
+        background-color: $site-blue;
+
+        margin-bottom: 140px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+
+
     }
 
     
