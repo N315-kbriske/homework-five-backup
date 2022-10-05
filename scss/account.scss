@@ -1,0 +1,112 @@
+.accountPanel {
+  height: 868px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .loginContainer {
+    height: 180px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    .loginHeader {
+      font-size: 26px;
+    }
+
+    .email {
+      border: none;
+      border-bottom: 1px solid black;
+
+      &::placeholder {
+        color: black;
+        font-size: 16px;
+      }
+    }
+
+    .password {
+      border: none;
+      border-bottom: 1px solid black;
+
+      &::placeholder {
+        color: black;
+        font-size: 16px;
+      }
+    }
+
+    .submit {
+      width: 170px;
+      height: 45px;
+      background-color: $site-blue;
+      border: none;
+      color: white;
+      font-size: 16px;
+    }
+  }
+
+  .signUpContainer {
+    height: 330px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    .signUpSubheader {
+    }
+
+    .signUpHeader {
+      margin-top: -20px;
+      font-size: 26px;
+    }
+
+    .fName {
+      border: none;
+      border-bottom: 1px solid black;
+
+      &::placeholder {
+        color: black;
+        font-size: 16px;
+      }
+    }
+
+    .lName {
+      border: none;
+      border-bottom: 1px solid black;
+
+      &::placeholder {
+        color: black;
+        font-size: 16px;
+      }
+    }
+
+    .email {
+      border: none;
+      border-bottom: 1px solid black;
+
+      &::placeholder {
+        color: black;
+        font-size: 16px;
+      }
+    }
+
+    .password {
+      border: none;
+      border-bottom: 1px solid black;
+
+      &::placeholder {
+        color: black;
+        font-size: 16px;
+      }
+    }
+
+    .submit {
+      width: 170px;
+      height: 45px;
+      background-color: $site-blue;
+      border: none;
+      color: white;
+      font-size: 16px;
+    }
+  }
+}

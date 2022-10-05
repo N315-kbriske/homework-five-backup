@@ -181,4 +181,96 @@ footer .footerSocials a .social img {
   height: 68px;
 }
 
+.accountPanel {
+  height: 868px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.accountPanel .loginContainer {
+  height: 180px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.accountPanel .loginContainer .loginHeader {
+  font-size: 26px;
+}
+.accountPanel .loginContainer .email {
+  border: none;
+  border-bottom: 1px solid black;
+}
+.accountPanel .loginContainer .email::placeholder {
+  color: black;
+  font-size: 16px;
+}
+.accountPanel .loginContainer .password {
+  border: none;
+  border-bottom: 1px solid black;
+}
+.accountPanel .loginContainer .password::placeholder {
+  color: black;
+  font-size: 16px;
+}
+.accountPanel .loginContainer .submit {
+  width: 170px;
+  height: 45px;
+  background-color: #587c83;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+.accountPanel .signUpContainer {
+  height: 330px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.accountPanel .signUpContainer .signUpHeader {
+  margin-top: -20px;
+  font-size: 26px;
+}
+.accountPanel .signUpContainer .fName {
+  border: none;
+  border-bottom: 1px solid black;
+}
+.accountPanel .signUpContainer .fName::placeholder {
+  color: black;
+  font-size: 16px;
+}
+.accountPanel .signUpContainer .lName {
+  border: none;
+  border-bottom: 1px solid black;
+}
+.accountPanel .signUpContainer .lName::placeholder {
+  color: black;
+  font-size: 16px;
+}
+.accountPanel .signUpContainer .email {
+  border: none;
+  border-bottom: 1px solid black;
+}
+.accountPanel .signUpContainer .email::placeholder {
+  color: black;
+  font-size: 16px;
+}
+.accountPanel .signUpContainer .password {
+  border: none;
+  border-bottom: 1px solid black;
+}
+.accountPanel .signUpContainer .password::placeholder {
+  color: black;
+  font-size: 16px;
+}
+.accountPanel .signUpContainer .submit {
+  width: 170px;
+  height: 45px;
+  background-color: #587c83;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+
 /*# sourceMappingURL=styles.css.map */
