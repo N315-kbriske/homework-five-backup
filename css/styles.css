@@ -273,4 +273,18 @@ footer .footerSocials a .social img {
   font-size: 16px;
 }
 
+.blogContainer {
+  min-height: 500px;
+  min-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.blogContainer .blogSection {
+  height: 463px;
+  width: 1464px;
+  background-color: #587c83;
+}
+
 /*# sourceMappingURL=styles.css.map */

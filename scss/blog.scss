@@ -1,0 +1,19 @@
+.blogContainer {
+    min-height: 500px;
+    min-width: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    flex-direction: column;
+
+    .blogSection {
+        height: 463px;
+        width: 1464px;
+
+        background-color: $site-blue;
+    }
+
+    
+}
