@@ -10,20 +10,78 @@ var bookList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
   },
-  // {
-  //   bookTitle: "Groot Rocks",
-  //   bookImage: "book1.jpg",
-  //   bookAvail: "In Stock",
-  //   price: "19.99",
-  //   bookQty: "",
-  // },
-  // {
-  //   bookTitle: "Mom & Dad Rock",
-  //   bookImage: "book1.jpg",
-  //   bookAvail: "In Stock",
-  //   price: "19.99",
-  //   bookQty: "",
-  // },
+  {
+    bookTitle: "Misery",
+    bookImage: "misery.jpg",
+    bookAvail: "In Stock",
+    price: "15.99",
+    bookFlavor:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+    bookQty: "",
+  },
+  {
+    bookTitle: "Misery",
+    bookImage: "misery.jpg",
+    bookAvail: "In Stock",
+    price: "15.99",
+    bookFlavor:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+    bookQty: "",
+  }, 
+  {
+    bookTitle: "Misery",
+    bookImage: "misery.jpg",
+    bookAvail: "In Stock",
+    price: "15.99",
+    bookFlavor:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+    bookQty: "",
+  }, 
+  {
+    bookTitle: "Misery",
+    bookImage: "misery.jpg",
+    bookAvail: "In Stock",
+    price: "15.99",
+    bookFlavor:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+    bookQty: "",
+  }, 
+  {
+    bookTitle: "Misery",
+    bookImage: "misery.jpg",
+    bookAvail: "In Stock",
+    price: "15.99",
+    bookFlavor:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+    bookQty: "",
+  }, 
+  {
+    bookTitle: "Misery",
+    bookImage: "misery.jpg",
+    bookAvail: "In Stock",
+    price: "15.99",
+    bookFlavor:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+    bookQty: "",
+  }, 
+  {
+    bookTitle: "Misery",
+    bookImage: "misery.jpg",
+    bookAvail: "In Stock",
+    price: "15.99",
+    bookFlavor:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+    bookQty: "",
+  }, {
+    bookTitle: "Misery",
+    bookImage: "misery.jpg",
+    bookAvail: "In Stock",
+    price: "15.99",
+    bookFlavor:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+    bookQty: "",
+  }
+  
 ];
 
 var cart = [];
@@ -42,8 +100,8 @@ export function changePage(pageID, callback) {
       $("#app").html(data);
       // loops through the json array at top
       $.each(bookList, (index, book) => {
-        $(".row").append(`<div class="booksContent">
-  <div class="bookRowTitle">BOOKSETS</div>
+        $(".booksContent").append(`
+  
   <div class="rowContainer">
     <div class="bookRow">
       <div class="bookImg">
@@ -54,7 +112,8 @@ export function changePage(pageID, callback) {
         <div class="bookPrice">$${book.price}</div>
         <button class="addBook" id="${index}">ADD TO CART</button>
       </div>
-    </div>`);
+   
+    `);
       });
 
       $.each(bookList, function (index, book) {});

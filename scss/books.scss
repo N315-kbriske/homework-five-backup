@@ -18,70 +18,92 @@
 //   }
 // }
 
-.booksContent {
-  max-width: 100%;
+.books {
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
-  border: 5px solid orange;
 
-  .bookRowTitle {
-    width: 146px;
-    height: 26px;
-    // border: 2px dotted blue;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    padding-left: 54px;
-    margin-top: 188px;
-    // font-weight: bold;
-    // text-align: center;
-  }
 
-  .rowContainer {
-    max-width: 100%;
+
+
+  .row {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-left: 54px;
-    border: 2px dotted red;
+    flex-direction: column;
+  
+    display: flex;
 
-    .bookRow {
-      border: 2px solid purple;
+
+    .bookRowTitle {
+      width: 146px;
+      height: 26px;
+       border: 2px dotted blue;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      padding-left: 54px;
+      margin-top: 188px;
+      // font-weight: bold;
+      text-align: center;
+    }
+  
+    
+    
+    .booksContent {
+      max-width: 100%;
       display: flex;
       align-items: flex-start;
-
-      .bookImg {
-        margin-right: 54px;
-
-        img {
-          width: 223px;
-          height: 246px;
-        }
-      }
-
-      .itemContainer {
-        // height: 246px;
+      flex-wrap: wrap;
+  
+    
+  
+      border: 5px solid orange;
+    
+      
+      .rowContainer {
+        max-width: 100%;
         display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        justify-content: space-between;
-        border: 2px solid green;
-
-        .bookDescription {
-          width: 280px;
-          height: 92px;
-          margin-bottom: 58px;
-        }
-        .bookPrice {
-          width: 49px;
-          height: 16px;
-          margin-bottom: 34px;
-          // border: 2px solid orange;
-        }
-        .addBook {
-          width: 222px;
-          height: 68px;
-          background-color: white;
-          border: 1px solid black;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 54px;
+        border: 2px dotted red;
+    
+        .bookRow {
+          border: 2px solid purple;
+          display: flex;
+          align-items: flex-start;
+    
+          .bookImg {
+            margin-right: 54px;
+    
+            img {
+              width: 223px;
+              height: 246px;
+            }
+          }
+    
+          .itemContainer {
+            // height: 246px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 2px solid green;
+    
+            .bookDescription {
+              width: 280px;
+              height: 92px;
+              margin-bottom: 58px;
+            }
+            .bookPrice {
+              width: 49px;
+              height: 16px;
+              margin-bottom: 34px;
+              // border: 2px solid orange;
+            }
+            .addBook {
+              width: 222px;
+              height: 68px;
+              background-color: white;
+              border: 1px solid black;
+            }
+          }
         }
       }
     }
