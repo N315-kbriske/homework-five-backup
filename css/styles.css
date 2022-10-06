@@ -564,4 +564,48 @@ footer .footerSocials a .social img {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.cartPage {
+  max-width: 1920px;
+}
+.cartPage .cartItemContainer {
+  height: 566px;
+  display: flex;
+  align-items: flex-start;
+  padding: 152px 0px 0px 135px;
+  border-bottom: 1px solid black;
+}
+.cartPage .cartItemContainer .cartItemImage {
+  padding-right: 22px;
+}
+.cartPage .cartItemContainer .cartItemImage img {
+  width: 205px;
+  height: 317px;
+}
+.cartPage .cartItemContainer .itemContent {
+  width: 185px;
+  height: 158px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.cartPage .cartItemContainer .itemStock {
+  margin-top: -35px;
+}
+.cartPage .cartItemContainer .qtyContain {
+  width: 166px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cartPage .cartItemContainer .qtyContain .changeQty {
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: white;
+}
+.cartPage .cartItemContainer .qtyContain .delete {
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: white;
+}
+
 /*# sourceMappingURL=styles.css.map */
