@@ -1,61 +1,101 @@
 .ffContainer {
-    min-height: 1924px;
-    min-width: 500px;
+  min-height: 1924px;
+  min-width: 500px;
+
+  display: flex;
+  align-items: center;
+  //justify-content: space-evenly;
+
+  flex-direction: column;
+
+  .ffHero {
+    height: 463px;
+    width: 1464px;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(88, 124, 131, 0.6),
+        rgba(88, 124, 131, 0.6)
+      ),
+      url(/assets/images/february-favorites-hero.jpg);
+
+    background-size: cover;
+
+    margin-top: 140px;
+    margin-bottom: 125px;
 
     display: flex;
     align-items: center;
-    //justify-content: space-evenly;
-    
+    justify-content: space-evenly;
     flex-direction: column;
 
-    .ffHero {
-        height: 463px;
-        width: 1464px;
-
-        background: linear-gradient(to bottom, 
-        rgba(88, 124, 131, .6), 
-        rgba(88, 124, 131, .6)), 
-        url(/assets/images/february-favorites-hero.jpg);
-       
-        background-size: cover;
-
-        margin-top: 140px;
-        margin-bottom: 125px;
-
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
-
-        .ffTitle {
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: $site-white;
-            font-size: 32px;
-            margin-top: -20px;
-            
-        }
-
-        .ffHeroDescription{
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: $site-white;
-            font-size: 26px;
-            margin-top: -75px;
-        }
-
-        .ffHeroQuote{
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: $site-white;
-            font-size: 16px;
-            margin-top: -70px;
-        }
+    .ffTitle {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: $site-white;
+      font-size: 32px;
+      margin-top: -20px;
     }
 
+    .ffHeroDescription {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: $site-white;
+      font-size: 26px;
+      margin-top: -75px;
+    }
 
+    .ffHeroQuote {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: $site-white;
+      font-size: 16px;
+      margin-top: -70px;
+    }
+  }
 
+  .ffContain {
+    // width: 1512px;
+    max-width: 90%;
+    max-height: 380px;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
+    margin-bottom: 140px;
 
+    .postImage {
+      margin-right: 35px;
+      img {
+        width: 250px;
+        height: 380px;
+      }
+    }
 
-    
+    .postContain {
+      width: 100%;
+      height: 253px;
+      display: flex;
+      // align-items: center;
+      // justify-content: flex-start;
+      flex-direction: column;
+      margin-bottom: 10%;
+      //   border: 2px dotted blue;
 
+      .postHead {
+        // height: 26px;
+        font-size: 26px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin-bottom: 60px;
+        font-weight: bold;
+        // border: 2px solid red;
+      }
+
+      .postContent {
+        font-weight: bolder;
+        font-size: 16px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        // height: 168px;
+        // border: 2px solid red;
+      }
+    }
+  }
 }
