@@ -196,6 +196,7 @@ footer .footerSocials a .social img {
 }
 .accountPanel .loginContainer .loginHeader {
   font-size: 26px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .accountPanel .loginContainer .email {
   border: none;
@@ -204,6 +205,7 @@ footer .footerSocials a .social img {
 .accountPanel .loginContainer .email::placeholder {
   color: black;
   font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .accountPanel .loginContainer .password {
   border: none;
@@ -212,6 +214,7 @@ footer .footerSocials a .social img {
 .accountPanel .loginContainer .password::placeholder {
   color: black;
   font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .accountPanel .loginContainer .submit {
   width: 170px;
@@ -220,6 +223,7 @@ footer .footerSocials a .social img {
   border: none;
   color: white;
   font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .accountPanel .signUpContainer {
   height: 330px;
@@ -231,6 +235,7 @@ footer .footerSocials a .social img {
 .accountPanel .signUpContainer .signUpHeader {
   margin-top: -20px;
   font-size: 26px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .accountPanel .signUpContainer .fName {
   border: none;
@@ -239,6 +244,7 @@ footer .footerSocials a .social img {
 .accountPanel .signUpContainer .fName::placeholder {
   color: black;
   font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .accountPanel .signUpContainer .lName {
   border: none;
@@ -247,6 +253,7 @@ footer .footerSocials a .social img {
 .accountPanel .signUpContainer .lName::placeholder {
   color: black;
   font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .accountPanel .signUpContainer .email {
   border: none;
@@ -255,6 +262,7 @@ footer .footerSocials a .social img {
 .accountPanel .signUpContainer .email::placeholder {
   color: black;
   font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .accountPanel .signUpContainer .password {
   border: none;
@@ -263,6 +271,7 @@ footer .footerSocials a .social img {
 .accountPanel .signUpContainer .password::placeholder {
   color: black;
   font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .accountPanel .signUpContainer .submit {
   width: 170px;
@@ -271,6 +280,7 @@ footer .footerSocials a .social img {
   border: none;
   color: white;
   font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .blogContainer {
