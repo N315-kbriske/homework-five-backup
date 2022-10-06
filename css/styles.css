@@ -383,4 +383,54 @@ footer .footerSocials a .social img {
   justify-content: space-evenly;
 }
 
+.bookclubContainer {
+  min-height: 1924px;
+  min-width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.bookclubContainer .bookclubHero {
+  height: 463px;
+  width: 1464px;
+  background: linear-gradient(to bottom, rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(/assets/images/book-club-hero.jpg);
+  background-size: cover;
+  margin-top: 140px;
+  margin-bottom: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.bookclubContainer .bookclubHero .bcHeroTitle {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  font-size: 32px;
+  margin-top: -20px;
+}
+.bookclubContainer .bookclubHero .bcHeroDescription {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  font-size: 26px;
+  margin-top: -110px;
+}
+.bookclubContainer .bookclubContent {
+  margin-left: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.bookclubContainer .bookclubContent .bookclubImage {
+  width: 622px;
+  height: 463px;
+  background-image: url(/assets/images/open-book-blog.jpg);
+  background-size: cover;
+  margin-right: 39px;
+}
+.bookclubContainer .bookclubContent .bookclubParagraph {
+  width: 898px;
+  height: 882px;
+  font-size: 16;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /*# sourceMappingURL=styles.css.map */
