@@ -8,7 +8,7 @@ function changeRoute() {
   if (pageID == "" || pageID == "home") {
     MODEL.changePage(pageID, initSubmitListener);
   } else if (pageID == "books") {
-    MODEL.changePage(pageID, placeholder);
+    MODEL.changePage(pageID, buyNow);
   } else {
     MODEL.changePage(pageID);
   }
@@ -69,6 +69,14 @@ function initSubmitListener() {
 
 function trace(fileName, log) {
   console.log(fileName + " " + log);
+}
+
+function buyNow() {
+  $(".bookInfo button").on("click", (e) => {
+    let bookID = e.currentTarget.id;
+    MODEL.addToCart(bookID);
+    console.log(bookID);
+  });
 }
 
 function initURLListener() {
