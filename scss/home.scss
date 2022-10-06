@@ -1,12 +1,65 @@
-// .homeContent {
-//   .homeHero {
-//     max-width: 1500px;
-//     height: 530px;
-//     background-image: url("../assets/images/home-hero.jpg");
-//     background-position: center;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     overflow: hidden;
-//     margin: 0 auto;
-//   }
-// }
+.homeContent {
+  max-width: 100%;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  .homeHero {
+    // padding: 268px 210px 0px 210px;
+    // margin: 268px 210px 0px 210px;
+    // width: 1500px;
+    height: 530px;
+    background: linear-gradient(
+        rgba(88, 124, 131, 0.6),
+        rgba(88, 124, 131, 0.6)
+      ),
+      url(/assets/images/home-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin: 0px auto 176px auto;
+  }
+
+  .panelContainer {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // border: 2px solid purple;
+    // padding: 0px 120px 0px 120px;
+
+    .bookDetailsContain {
+      height: 841px;
+      //   border: 2px solid red;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      margin-bottom: 188px;
+
+      .bookImage {
+        img {
+          width: 306px;
+          height: 491px;
+        }
+      }
+
+      .bookDescribe {
+        width: 413px;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      .bookPricing {
+        font-size: 32px;
+      }
+
+      .addBook {
+        width: 222px;
+        height: 68px;
+        background-color: white;
+        border: 1px solid black;
+      }
+    }
+  }
+}

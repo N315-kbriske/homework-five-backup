@@ -60,6 +60,51 @@ nav a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+.homeContent {
+  max-width: 100%;
+}
+.homeContent .homeHero {
+  height: 530px;
+  background: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(/assets/images/home-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin: 0px auto 176px auto;
+}
+.homeContent .panelContainer {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.homeContent .panelContainer .bookDetailsContain {
+  height: 841px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 188px;
+}
+.homeContent .panelContainer .bookDetailsContain .bookImage img {
+  width: 306px;
+  height: 491px;
+}
+.homeContent .panelContainer .bookDetailsContain .bookDescribe {
+  width: 413px;
+  font-size: 16px;
+  text-align: center;
+}
+.homeContent .panelContainer .bookDetailsContain .bookPricing {
+  font-size: 32px;
+}
+.homeContent .panelContainer .bookDetailsContain .addBook {
+  width: 222px;
+  height: 68px;
+  background-color: white;
+  border: 1px solid black;
+}
+
 .aboutSection {
   max-width: 1920px;
   height: 700px;
