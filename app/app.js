@@ -72,7 +72,7 @@ function trace(fileName, log) {
 }
 
 function buyNow() {
-  $(".bookInfo button").on("click", (e) => {
+  $(".itemContainer button").on("click", (e) => {
     let bookID = e.currentTarget.id;
     MODEL.addToCart(bookID);
     console.log(bookID);
