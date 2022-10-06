@@ -131,54 +131,61 @@ footer .footerSocials a .social img {
 }
 
 .booksContent {
+  max-width: 100%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  border: 5px solid orange;
 }
 .booksContent .bookRowTitle {
   width: 146px;
   height: 26px;
-  border: 2px dotted blue;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin-left: 54px;
+  padding-left: 54px;
+  margin-top: 188px;
 }
 .booksContent .rowContainer {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  margin-left: 54px;
+  border: 2px dotted red;
 }
 .booksContent .rowContainer .bookRow {
-  max-width: 100%;
   border: 2px solid purple;
   display: flex;
   align-items: flex-start;
 }
 .booksContent .rowContainer .bookRow .bookImg {
+  margin-right: 54px;
+}
+.booksContent .rowContainer .bookRow .bookImg img {
   width: 223px;
   height: 246px;
-  border: 2px dashed salmon;
 }
 .booksContent .rowContainer .bookRow .itemContainer {
-  height: 246px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-between;
+  border: 2px solid green;
 }
 .booksContent .rowContainer .bookRow .itemContainer .bookDescription {
   width: 280px;
   height: 92px;
-  border: 2px solid green;
+  margin-bottom: 58px;
 }
 .booksContent .rowContainer .bookRow .itemContainer .bookPrice {
   width: 49px;
   height: 16px;
-  border: 2px solid orange;
+  margin-bottom: 34px;
 }
 .booksContent .rowContainer .bookRow .itemContainer .addBook {
   width: 222px;
   height: 68px;
+  background-color: white;
+  border: 1px solid black;
 }
 
 .accountPanel {
