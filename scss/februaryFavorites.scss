@@ -1,0 +1,61 @@
+.ffContainer {
+    min-height: 1924px;
+    min-width: 500px;
+
+    display: flex;
+    align-items: center;
+    //justify-content: space-evenly;
+    
+    flex-direction: column;
+
+    .ffHero {
+        height: 463px;
+        width: 1464px;
+
+        background: linear-gradient(to bottom, 
+        rgba(88, 124, 131, .6), 
+        rgba(88, 124, 131, .6)), 
+        url(/assets/images/february-favorites-hero.jpg);
+       
+        background-size: cover;
+
+        margin-top: 140px;
+        margin-bottom: 125px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+        .ffTitle {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: $site-white;
+            font-size: 32px;
+            margin-top: -20px;
+            
+        }
+
+        .ffHeroDescription{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: $site-white;
+            font-size: 26px;
+            margin-top: -75px;
+        }
+
+        .ffHeroQuote{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: $site-white;
+            font-size: 16px;
+            margin-top: -70px;
+        }
+    }
+
+
+
+
+
+
+
+    
+
+}

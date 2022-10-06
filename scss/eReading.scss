@@ -1,4 +1,4 @@
-.bookclubContainer {
+.eReadingContainer {
     min-height: 1924px;
     min-width: 500px;
 
@@ -11,7 +11,7 @@
    
 
 
-    .bookclubHero {
+    .eReadingHero {
         height: 463px;
         width: 1464px;
 
@@ -19,7 +19,7 @@
         background: linear-gradient(to bottom, 
         rgba(88, 124, 131, .6), 
         rgba(88, 124, 131, .6)), 
-        url(/assets/images/book-club-hero.jpg);
+        url(/assets/images/eread-hero.jpg);
        
         //background-image: url(/assets/images/book-club-hero.jpg);
         //background-color: $site-blue;
@@ -34,7 +34,7 @@
         justify-content: space-evenly;
         flex-direction: column;
 
-        .bcHeroTitle {
+        .eReadingTitle {
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: $site-white;
             font-size: 32px;
@@ -42,7 +42,7 @@
             
         }
 
-        .bcHeroDescription{
+        .eReadingHeroDescription{
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: $site-white;
             font-size: 26px;
@@ -52,7 +52,7 @@
 
     }
 
-    .bookclubContent {
+    .eReadingContent {
 
         margin-left: 100px;
 
@@ -62,20 +62,20 @@
 
     
         
-        .bookclubImage {
+        .eReadingImage {
 
             //border: 5px dotted blueviolet;
             width: 622px;
             height: 463px;
 
-            background-image: url(/assets/images/open-book-blog.jpg);
+            background-image: url(/assets/images/ereading-blog.jpg);
             background-size: cover;
 
             margin-right: 39px;
         }
 
 
-        .bookclubParagraph {
+        .eReadingParagraph {
 
             //border: 5px dotted orangered;
             width: 898px;
