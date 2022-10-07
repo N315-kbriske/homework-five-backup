@@ -175,32 +175,21 @@ footer .footerSocials a .social img {
   margin-right: 35px;
 }
 
-.books {
-  display: flex;
-  flex-direction: column;
-}
-.books .row {
-  display: flex;
-  flex-direction: column;
-  display: flex;
-}
-.books .row .bookRowTitle {
-  width: 146px;
-  height: 26px;
-  border: 2px dotted blue;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding-left: 54px;
-  margin-top: 188px;
-  text-align: center;
-}
-.books .row .booksContent {
+.booksContent {
   max-width: 100%;
   display: flex;
   align-items: flex-start;
-  flex-wrap: wrap;
+  flex-direction: column;
   border: 5px solid orange;
 }
-.books .row .booksContent .rowContainer {
+.booksContent .bookRowTitle {
+  width: 146px;
+  height: 26px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 54px;
+  margin-top: 188px;
+}
+.booksContent .rowContainer {
   max-width: 100%;
   display: flex;
   align-items: center;
@@ -208,36 +197,36 @@ footer .footerSocials a .social img {
   margin-left: 54px;
   border: 2px dotted red;
 }
-.books .row .booksContent .rowContainer .bookRow {
+.booksContent .rowContainer .bookRow {
   border: 2px solid purple;
   display: flex;
   align-items: flex-start;
 }
-.books .row .booksContent .rowContainer .bookRow .bookImg {
+.booksContent .rowContainer .bookRow .bookImg {
   margin-right: 54px;
 }
-.books .row .booksContent .rowContainer .bookRow .bookImg img {
+.booksContent .rowContainer .bookRow .bookImg img {
   width: 223px;
   height: 246px;
 }
-.books .row .booksContent .rowContainer .bookRow .itemContainer {
+.booksContent .rowContainer .bookRow .itemContainer {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-between;
   border: 2px solid green;
 }
-.books .row .booksContent .rowContainer .bookRow .itemContainer .bookDescription {
+.booksContent .rowContainer .bookRow .itemContainer .bookDescription {
   width: 280px;
   height: 92px;
   margin-bottom: 58px;
 }
-.books .row .booksContent .rowContainer .bookRow .itemContainer .bookPrice {
+.booksContent .rowContainer .bookRow .itemContainer .bookPrice {
   width: 49px;
   height: 16px;
   margin-bottom: 34px;
 }
-.books .row .booksContent .rowContainer .bookRow .itemContainer .addBook {
+.booksContent .rowContainer .bookRow .itemContainer .addBook {
   width: 222px;
   height: 68px;
   background-color: white;

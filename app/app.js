@@ -9,6 +9,8 @@ function changeRoute() {
     MODEL.changePage(pageID, initSubmitListener);
   } else if (pageID == "books") {
     MODEL.changePage(pageID, buyNow);
+  } else if (pageID == "account") {
+    MODEL.changePage(pageID, initSubmitListener);
   } else {
     MODEL.changePage(pageID);
   }
@@ -30,13 +32,13 @@ function placeholder() {}
 
 function initSubmitListener() {
   $("#submit").click(() => {
-    // console.log("submit");
-    trace("app.js", "submit");
+    console.log("submit");
+    //   trace("app.js", "submit");
 
-    let fn = $("#fName").val();
-    let ln = $("#lName").val();
-    let email = $("#email").val();
-    let pw = $("#pw").val();
+    let fn = $(".fName").val();
+    let ln = $(".lName").val();
+    let email = $(".email").val();
+    let pw = $(".password").val();
 
     // make the user object
     if (fn == "") {
@@ -52,18 +54,18 @@ function initSubmitListener() {
         firstName: fn,
         lastName: ln,
         email: email,
-        password: pw,
+        password: password,
       };
 
       // send that object
       MODEL.setUserInfo(userObj);
 
-      $("#fName").val("");
-      $("#lName").val("");
-      $("#email").val("");
-      $("#pw").val("");
+      $(".fName").val("");
+      $(".lName").val("");
+      $(".email").val("");
+      $(".password").val("");
     }
-    // console.log(`${fn} ${ln} ${email} ${pw}`);
+    console.log(`${fn} ${ln} ${email} ${pw}`);
   });
 }
 

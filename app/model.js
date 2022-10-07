@@ -27,7 +27,7 @@ var bookList = [
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
-  }, 
+  },
   {
     bookTitle: "Misery",
     bookImage: "misery.jpg",
@@ -36,7 +36,7 @@ var bookList = [
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
-  }, 
+  },
   {
     bookTitle: "Misery",
     bookImage: "misery.jpg",
@@ -45,7 +45,7 @@ var bookList = [
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
-  }, 
+  },
   {
     bookTitle: "Misery",
     bookImage: "misery.jpg",
@@ -54,7 +54,7 @@ var bookList = [
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
-  }, 
+  },
   {
     bookTitle: "Misery",
     bookImage: "misery.jpg",
@@ -63,7 +63,7 @@ var bookList = [
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
-  }, 
+  },
   {
     bookTitle: "Misery",
     bookImage: "misery.jpg",
@@ -72,7 +72,8 @@ var bookList = [
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
-  }, {
+  },
+  {
     bookTitle: "Misery",
     bookImage: "misery.jpg",
     bookAvail: "In Stock",
@@ -80,8 +81,7 @@ var bookList = [
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
-  }
-  
+  },
 ];
 
 var cart = [];
@@ -122,7 +122,7 @@ export function changePage(pageID, callback) {
     });
   } else {
     $.get(`pages/${pageID}.html`, function (data) {
-      console.log("data " + data);
+      // console.log("data " + data);
       $("#app").html(data);
       // requires array and the iteratory
       $.each(cart, (index, cartItem) => {
