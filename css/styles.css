@@ -179,7 +179,6 @@ footer .footerSocials a .social img {
   max-width: 100%;
   display: flex;
   align-items: flex-start;
-  flex-direction: column;
   border: 5px solid orange;
 }
 .booksContent .bookRowTitle {

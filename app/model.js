@@ -2,8 +2,26 @@ var userInfo = {};
 
 var bookList = [
   {
-    bookTitle: "To Kill A Mockingbird",
-    bookImage: "book1.jpg",
+    bookTitle: "Twilight",
+    bookImage: "twilight-box-set.jpg",
+    bookAvail: "In Stock",
+    price: "99.99",
+    bookFlavor:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+    bookQty: "",
+  },
+  {
+    bookTitle: "HP",
+    bookImage: "hp-box-set.jpg",
+    bookAvail: "In Stock",
+    price: "100",
+    bookFlavor:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+    bookQty: "",
+  },
+  {
+    bookTitle: "GOT",
+    bookImage: "got-box-set.jpg",
     bookAvail: "In Stock",
     price: "15.99",
     bookFlavor:
@@ -12,25 +30,7 @@ var bookList = [
   },
   {
     bookTitle: "Misery",
-    bookImage: "misery.jpg",
-    bookAvail: "In Stock",
-    price: "15.99",
-    bookFlavor:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
-    bookQty: "",
-  },
-  {
-    bookTitle: "Misery",
-    bookImage: "misery.jpg",
-    bookAvail: "In Stock",
-    price: "15.99",
-    bookFlavor:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
-    bookQty: "",
-  },
-  {
-    bookTitle: "Misery",
-    bookImage: "misery.jpg",
+    bookImage: "finding me.jpg",
     bookAvail: "In Stock",
     price: "15.99",
     bookFlavor:
@@ -92,6 +92,59 @@ export function changePage(pageID, callback) {
       //   console.log("data " + data);
       // inject the data
       $("#app").html(data);
+
+      $.each(bookList, (index, book) => {
+        $(".homeContent").append(`<div class="homeContent">
+        <div class="homeHero"></div>
+        <div class="panelContainer">
+          <div class="bookDetailsContain">
+            <div class="bookImage">
+              <img src="../assets/images/to-kill-a-mockingbird.jpg" alt="" />
+            </div>
+      
+            <div class="bookDescribe">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua." Urna nunc id cursus
+              metus aliquam eleifend mi. Massa vitae tortor condimentum lacinia quis
+              vel eros.
+            </div>
+            <div class="bookPricing">$15.99</div>
+            <button class="addBook">ADD TO CART</button>
+          </div>
+      
+          <div class="bookDetailsContain">
+            <div class="bookImage">
+              <img src="../assets/images/to-kill-a-mockingbird.jpg" alt="" />
+            </div>
+      
+            <div class="bookDescribe">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua." Urna nunc id cursus
+              metus aliquam eleifend mi. Massa vitae tortor condimentum lacinia quis
+              vel eros.
+            </div>
+            <div class="bookPricing">$15.99</div>
+            <button class="addBook">ADD TO CART</button>
+          </div>
+      
+          <div class="bookDetailsContain">
+            <div class="bookImage">
+              <img src="../assets/images/to-kill-a-mockingbird.jpg" alt="" />
+            </div>
+      
+            <div class="bookDescribe">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua." Urna nunc id cursus
+              metus aliquam eleifend mi. Massa vitae tortor condimentum lacinia quis
+              vel eros.
+            </div>
+            <div class="bookPricing">$15.99</div>
+            <button class="addBook">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+    `);
+      });
       callback();
     });
   } else if (pageID == "books") {
