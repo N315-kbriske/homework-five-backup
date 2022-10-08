@@ -63,6 +63,11 @@ nav a {
 .homeContent {
   max-width: 100%;
 }
+.homeContent .homeBooks {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 .homeContent .homeHero {
   max-width: 1500px;
   height: 530px;
@@ -72,6 +77,7 @@ nav a {
   background-repeat: no-repeat;
   overflow: hidden;
   margin: 0px auto 176px auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .homeContent .panelContainer {
   max-width: 100%;
@@ -95,15 +101,19 @@ nav a {
   width: 413px;
   font-size: 16px;
   text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .homeContent .panelContainer .bookDetailsContain .bookPricing {
   font-size: 32px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
 }
 .homeContent .panelContainer .bookDetailsContain .addBook {
   width: 222px;
   height: 68px;
   background-color: white;
   border: 1px solid black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .aboutSection {

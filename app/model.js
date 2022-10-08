@@ -121,7 +121,37 @@ var bookList = [
     rowId: "#row4"
   },
 ];
-
+ var homeBookList = [
+  {
+    bookTitle: "To Kill a Mockingbird",
+    bookImage: "to-kill-a-mockingbird.jpg",
+    bookAvail: "In Stock",
+    price: "15.99",
+    bookFlavor:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+    bookQty: "",
+  },
+  {
+    bookTitle: "Becoming",
+    bookImage: "becoming.jpg",
+    bookAvail: "In Stock",
+    price: "25.99",
+    bookFlavor:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+    bookQty: "",
+   
+  },
+  {
+    bookTitle: "Firestarter",
+    bookImage: "firestarter.jpg",
+    bookAvail: "In Stock",
+    price: "19.99",
+    bookFlavor:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+    bookQty: "",
+  
+  },
+ ]
 
 var cart = [];
 
@@ -132,13 +162,13 @@ export function changePage(pageID, callback) {
       // inject the data
       $("#app").html(data);
 
-      $.each(bookList, (index, book) => {
-        $(".homeContent").append(`<div class="homeContent">
-        <div class="homeHero"></div>
+      $.each(homeBookList, (index, book) => {
+        $(".homeBooks").append(`
+        
         <div class="panelContainer">
           <div class="bookDetailsContain">
             <div class="bookImage">
-              <img src="../assets/images/to-kill-a-mockingbird.jpg" alt="" />
+            <img src="../images/${book.bookImage}" alt="${book.bookTitle}" />
             </div>
       
             <div class="bookDescribe">
@@ -147,44 +177,15 @@ export function changePage(pageID, callback) {
               metus aliquam eleifend mi. Massa vitae tortor condimentum lacinia quis
               vel eros.
             </div>
-            <div class="bookPricing">$15.99</div>
+            <div class="bookPricing">$${book.price}</div>
             <button class="addBook">ADD TO CART</button>
-          </div>
-      
-          <div class="bookDetailsContain">
-            <div class="bookImage">
-              <img src="../assets/images/to-kill-a-mockingbird.jpg" alt="" />
-            </div>
-      
-            <div class="bookDescribe">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua." Urna nunc id cursus
-              metus aliquam eleifend mi. Massa vitae tortor condimentum lacinia quis
-              vel eros.
-            </div>
-            <div class="bookPricing">$15.99</div>
-            <button class="addBook">ADD TO CART</button>
-          </div>
-      
-          <div class="bookDetailsContain">
-            <div class="bookImage">
-              <img src="../assets/images/to-kill-a-mockingbird.jpg" alt="" />
-            </div>
-      
-            <div class="bookDescribe">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua." Urna nunc id cursus
-              metus aliquam eleifend mi. Massa vitae tortor condimentum lacinia quis
-              vel eros.
-            </div>
-            <div class="bookPricing">$15.99</div>
-            <button class="addBook">ADD TO CART</button>
-          </div>
         </div>
-      </div>
     `);
       });
+      $.each(homeBookList, function (index, book) {});
+
       callback();
+      
     });
   } else if (pageID == "books") {
     $.get(`pages/${pageID}.html`, function (data) {
