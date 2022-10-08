@@ -627,6 +627,7 @@ footer .footerSocials a .social img {
 }
 
 .cartPage {
+  min-height: 100vh;
   max-width: 1920px;
 }
 .cartPage .cartItemContainer {
@@ -638,6 +639,7 @@ footer .footerSocials a .social img {
 }
 .cartPage .cartItemContainer .cartItemImage {
   padding-right: 22px;
+  margin-right: 50px;
 }
 .cartPage .cartItemContainer .cartItemImage img {
   width: 205px;
