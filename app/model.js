@@ -9,80 +9,119 @@ var bookList = [
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
+    rowId: "#row1"
   },
   {
-    bookTitle: "HP",
+    bookTitle: "Harry Potter",
     bookImage: "hp-box-set.jpg",
     bookAvail: "In Stock",
     price: "100",
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
+    rowId: "#row1"
   },
   {
-    bookTitle: "GOT",
+    bookTitle: "Game Of Thrones",
     bookImage: "got-box-set.jpg",
     bookAvail: "In Stock",
-    price: "15.99",
+    price: "100",
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
+    rowId: "#row1"
   },
   {
-    bookTitle: "Misery",
+    bookTitle: "Finding Me",
     bookImage: "finding me.jpg",
     bookAvail: "In Stock",
-    price: "15.99",
+    price: "27.99",
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
+    rowId: "#row2"
+  },
+  {
+    bookTitle: "MLK biography",
+    bookImage: "mlk-biography.jpg",
+    bookAvail: "In Stock",
+    price: "19.99",
+    bookFlavor:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+    bookQty: "",
+    rowId: "#row2"
+  },
+  {
+    bookTitle: "Elenor Roosevelt Biography",
+    bookImage: "elenor-roosevelt-biography.jpg",
+    bookAvail: "In Stock",
+    price: "17.99",
+    bookFlavor:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+    bookQty: "",
+    rowId: "#row2"
   },
   {
     bookTitle: "Misery",
     bookImage: "misery.jpg",
     bookAvail: "In Stock",
-    price: "15.99",
+    price: "19.99",
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
+    rowId: "#row3"
   },
   {
-    bookTitle: "Misery",
-    bookImage: "misery.jpg",
+    bookTitle: "Frankenstein",
+    bookImage: "frankenstein.jpg",
     bookAvail: "In Stock",
     price: "15.99",
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
+    rowId: "#row3"
   },
   {
-    bookTitle: "Misery",
-    bookImage: "misery.jpg",
+    bookTitle: "Phantoms",
+    bookImage: "phantoms.jpg",
+    bookAvail: "In Stock",
+    price: "19.99",
+    bookFlavor:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+    bookQty: "",
+    rowId: "#row3"
+  },
+  {
+    bookTitle: "Winnie The Pooh",
+    bookImage: "winnie the pooh.jpg",
+    bookAvail: "In Stock",
+    price: "19.99",
+    bookFlavor:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
+    bookQty: "",
+    rowId: "#row4"
+  },
+  {
+    bookTitle: "The Cat in The Hat",
+    bookImage: "cat and the hat.jpg",
     bookAvail: "In Stock",
     price: "15.99",
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
-  },
-  {
-    bookTitle: "Misery",
-    bookImage: "misery.jpg",
+    rowId: "#row4"
+  },{
+    bookTitle: "Space",
+    bookImage: "fun facts about space.jpg",
     bookAvail: "In Stock",
-    price: "15.99",
+    price: "7.99",
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
-  },
-  {
-    bookTitle: "Misery",
-    bookImage: "misery.jpg",
-    bookAvail: "In Stock",
-    price: "15.99",
-    bookFlavor:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
-    bookQty: "",
+    rowId: "#row4"
   },
 ];
+
 
 var cart = [];
 
@@ -153,7 +192,7 @@ export function changePage(pageID, callback) {
       $("#app").html(data);
       // loops through the json array at top
       $.each(bookList, (index, book) => {
-        $(".booksContent").append(`
+        $(book.rowId).append(`
   
   <div class="rowContainer">
     <div class="bookRow">
