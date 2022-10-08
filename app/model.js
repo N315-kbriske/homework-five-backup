@@ -194,16 +194,19 @@ export function changePage(pageID, callback) {
       $.each(bookList, (index, book) => {
         $(book.rowId).append(`
   
-  <div class="rowContainer">
-    <div class="bookRow">
-      <div class="bookImg">
-        <img src="../images/${book.bookImage}" alt="" />
+    <div class="rowContainer">
+      <div class="bookRow">
+        <div class="bookImg">
+          <img src="../images/${book.bookImage}" alt="${book.bookTitle}" />
+        </div>
+
+        <div class="itemContainer">
+          <div class="bookDescription">${book.bookFlavor}</div>
+          <div class="bookPrice">$${book.price}</div>
+          <button class="addBook" id="${index}">ADD TO CART</button>
+        </div>
       </div>
-      <div class="itemContainer">
-        <div class="bookDescription">${book.bookFlavor}</div>
-        <div class="bookPrice">$${book.price}</div>
-        <button class="addBook" id="${index}">ADD TO CART</button>
-      </div>
+    </div>
    
     `);
       });

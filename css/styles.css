@@ -176,24 +176,27 @@ footer .footerSocials a .social img {
   margin-right: 35px;
 }
 
-.row {
-  width: 90%;
-}
-.row .booksContent {
-  width: 90%;
-  display: flex;
-  align-items: flex-start;
-  border: 5px solid orange;
-}
-.row .booksContent .bookRowTitle {
-  width: 146px;
+.row .bookRowTitle {
+  width: 260px;
   height: 26px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding-left: 54px;
-  margin-top: 188px;
+  margin-top: 80px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 46px;
+}
+.row .booksContent {
+  min-height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-items: flex-start;
+  border: 5px solid orange;
+  padding-left: 20px;
+  margin-bottom: 140px;
 }
 .row .booksContent .rowContainer {
-  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -206,11 +209,15 @@ footer .footerSocials a .social img {
   align-items: flex-start;
 }
 .row .booksContent .rowContainer .bookRow .bookImg {
-  margin-right: 54px;
+  margin-right: 22px;
+  width: 225px;
+  height: 290px;
+  background-size: cover;
 }
 .row .booksContent .rowContainer .bookRow .bookImg img {
-  width: 215px;
-  height: 290px;
+  width: 85%;
+  height: 85%;
+  background-size: cover;
 }
 .row .booksContent .rowContainer .bookRow .itemContainer {
   display: flex;
