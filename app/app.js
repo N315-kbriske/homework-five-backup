@@ -31,7 +31,7 @@ function changeRoute() {
 function placeholder() {}
 
 function initSubmitListener() {
-  $("#submit").on("click", function (e) {
+  $(".submit").on("click", function (e) {
     console.log("submit");
     //   trace("app.js", "submit");
 
