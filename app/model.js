@@ -253,5 +253,5 @@ export function setUserInfo(userObj) {
 export function addToCart(bookIndex) {
   cart.push(bookIndex);
   $("#cartCount").html(cart.length.toString());
-  console.log(cart);
+  console.log(cart.values());
 }
