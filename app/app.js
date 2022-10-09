@@ -82,6 +82,7 @@ function initSubmitListener() {
     var signUp = open("./pages/home.html");
     signUp.alert("Thank you for signing up!!");
     signUp.focus();
+
   });
 }
 
