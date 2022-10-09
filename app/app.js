@@ -87,5 +87,6 @@ function initURLListener() {
 }
 
 $(document).ready(function () {
+  initSubmitListener();
   initURLListener();
 });

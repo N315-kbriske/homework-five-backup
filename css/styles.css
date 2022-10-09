@@ -356,7 +356,7 @@ footer .footerSocials a .social img {
 
 .blogContainer {
   min-height: 500px;
-  min-width: 500px;
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;

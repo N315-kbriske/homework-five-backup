@@ -1,7 +1,6 @@
 .blogContainer {
   min-height: 500px;
-  min-width: 500px;
-
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -11,8 +10,7 @@
   .blogHeadlines {
     width: 842px;
     height: 463px;
-
-    //border: 5px dotted brown;
+    // border: 5px solid orange;
 
     display: flex;
     align-items: center;

@@ -9,7 +9,7 @@ var bookList = [
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
-    rowId: "#row1"
+    rowId: "#row1",
   },
   {
     bookTitle: "Harry Potter",
@@ -19,7 +19,7 @@ var bookList = [
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
-    rowId: "#row1"
+    rowId: "#row1",
   },
   {
     bookTitle: "Game Of Thrones",
@@ -29,7 +29,7 @@ var bookList = [
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
-    rowId: "#row1"
+    rowId: "#row1",
   },
   {
     bookTitle: "Finding Me",
@@ -39,7 +39,7 @@ var bookList = [
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
-    rowId: "#row2"
+    rowId: "#row2",
   },
   {
     bookTitle: "MLK biography",
@@ -49,7 +49,7 @@ var bookList = [
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
-    rowId: "#row2"
+    rowId: "#row2",
   },
   {
     bookTitle: "Elenor Roosevelt Biography",
@@ -59,7 +59,7 @@ var bookList = [
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
-    rowId: "#row2"
+    rowId: "#row2",
   },
   {
     bookTitle: "Misery",
@@ -69,7 +69,7 @@ var bookList = [
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
-    rowId: "#row3"
+    rowId: "#row3",
   },
   {
     bookTitle: "Frankenstein",
@@ -79,7 +79,7 @@ var bookList = [
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
-    rowId: "#row3"
+    rowId: "#row3",
   },
   {
     bookTitle: "Phantoms",
@@ -89,7 +89,7 @@ var bookList = [
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
-    rowId: "#row3"
+    rowId: "#row3",
   },
   {
     bookTitle: "Winnie The Pooh",
@@ -99,7 +99,7 @@ var bookList = [
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
-    rowId: "#row4"
+    rowId: "#row4",
   },
   {
     bookTitle: "The Cat in The Hat",
@@ -109,8 +109,9 @@ var bookList = [
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
-    rowId: "#row4"
-  },{
+    rowId: "#row4",
+  },
+  {
     bookTitle: "Space",
     bookImage: "fun facts about space.jpg",
     bookAvail: "In Stock",
@@ -118,10 +119,10 @@ var bookList = [
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
-    rowId: "#row4"
+    rowId: "#row4",
   },
 ];
- var homeBookList = [
+var homeBookList = [
   {
     bookTitle: "To Kill a Mockingbird",
     bookImage: "to-kill-a-mockingbird.jpg",
@@ -139,7 +140,6 @@ var bookList = [
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
-   
   },
   {
     bookTitle: "Firestarter",
@@ -149,9 +149,8 @@ var bookList = [
     bookFlavor:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
     bookQty: "",
-  
   },
- ]
+];
 
 var cart = [];
 
@@ -185,7 +184,6 @@ export function changePage(pageID, callback) {
       $.each(homeBookList, function (index, book) {});
 
       callback();
-      
     });
   } else if (pageID == "books") {
     $.get(`pages/${pageID}.html`, function (data) {
@@ -255,4 +253,5 @@ export function setUserInfo(userObj) {
 export function addToCart(bookIndex) {
   cart.push(bookIndex);
   $("#cartCount").html(cart.length.toString());
+  console.log(cart);
 }
