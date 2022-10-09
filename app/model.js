@@ -181,9 +181,9 @@ export function changePage(pageID, callback) {
         </div>
     `);
       });
-      $.each(homeBookList, function (index, book) {});
+      // $.each(homeBookList, function (index, book) {});
 
-      callback();
+      // callback();
     });
   } else if (pageID == "books") {
     $.get(`pages/${pageID}.html`, function (data) {
@@ -210,8 +210,13 @@ export function changePage(pageID, callback) {
     `);
       });
 
-      $.each(bookList, function (index, book) {});
+      // $.each(bookList, function (index, book) {});
 
+      // callback();
+    });
+  } else if (pageID == "account") {
+    $.get(`pages/${pageID}.html`, function (data) {
+      $("#app").html(data);
       callback();
     });
   } else {

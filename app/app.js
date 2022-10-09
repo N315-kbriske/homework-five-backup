@@ -38,7 +38,7 @@ function initSubmitListener() {
     let fn = $(".fName").val();
     let ln = $(".lName").val();
     let email = $(".email").val();
-    let pw = $(".password").val();
+    let password = $(".password").val();
 
     // make the user object
     if (fn == "") {
@@ -47,7 +47,7 @@ function initSubmitListener() {
       alert("enter data");
     } else if (email == "") {
       alert("enter data");
-    } else if (pw == "") {
+    } else if (password == "") {
       alert("enter data");
     } else {
       let userObj = {
@@ -65,7 +65,7 @@ function initSubmitListener() {
       $(".email").val("");
       $(".password").val("");
     }
-    console.log(`${fn} ${ln} ${email} ${pw}`);
+    console.log(`${fn} ${ln} ${email} ${password}`);
   });
 }
 
