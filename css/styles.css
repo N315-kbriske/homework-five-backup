@@ -202,7 +202,6 @@ footer .footerSocials a .social img {
   display: flex;
   align-items: center;
   align-items: flex-start;
-  border: 5px solid orange;
   padding-left: 20px;
   margin-bottom: 140px;
 }
@@ -680,6 +679,58 @@ footer .footerSocials a .social img {
   border: none;
   border-bottom: 1px solid black;
   background-color: white;
+}
+
+.booksContent {
+  width: 100%;
+  height: 3012px;
+}
+.booksContent .row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+}
+.booksContent .row .rowHeader {
+  border: 2px solid red;
+}
+.booksContent .row .rowContain {
+  width: 100%;
+  display: flex;
+}
+.booksContent .row .rowContain .rowContent {
+  display: flex;
+  height: 380px;
+  border: 2px solid red;
+}
+.booksContent .row .rowContain .rowContent .bookImage {
+  margin-right: 50px;
+}
+.booksContent .row .rowContain .rowContent .bookImage img {
+  width: 223px;
+  height: 246px;
+}
+.booksContent .row .rowContain .rowContent .contentStack {
+  height: 280px;
+  border: 2px solid green;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.booksContent .row .rowContain .rowContent .contentStack .bookDescription {
+  width: 280px;
+  height: 92px;
+  border: 2px solid red;
+}
+.booksContent .row .rowContain .rowContent .contentStack .bookPrice {
+  border: 2px solid red;
+  width: 49px;
+  height: 16px;
+}
+.booksContent .row .rowContain .rowContent .contentStack .addToCart {
+  border: 2px solid red;
+  width: 222px;
+  height: 68px;
 }
 
 /*# sourceMappingURL=styles.css.map */

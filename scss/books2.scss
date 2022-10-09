@@ -1,0 +1,61 @@
+.booksContent {
+  width: 100%;
+  height: 3012px;
+
+  .row {
+    width: 100%;
+    display: flex;
+    // align-items: center;
+    // justify-content: space-evenly;
+    flex-direction: column;
+    border: 2px solid red;
+
+    .rowHeader {
+      border: 2px solid red;
+    }
+
+    .rowContain {
+      width: 100%;
+      display: flex;
+
+      .rowContent {
+        display: flex;
+        height: 380px;
+        border: 2px solid red;
+
+        .bookImage {
+          margin-right: 50px;
+          img {
+            width: 223px;
+            height: 246px;
+          }
+        }
+        .contentStack {
+          height: 280px;
+          border: 2px solid green;
+          display: flex;
+          // align-items: center;
+          justify-content: space-between;
+          flex-direction: column;
+          .bookDescription {
+            width: 280px;
+            height: 92px;
+            border: 2px solid red;
+          }
+
+          .bookPrice {
+            border: 2px solid red;
+            width: 49px;
+            height: 16px;
+          }
+
+          .addToCart {
+            border: 2px solid red;
+            width: 222px;
+            height: 68px;
+          }
+        }
+      }
+    }
+  }
+}

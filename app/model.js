@@ -187,7 +187,7 @@ export function changePage(pageID, callback) {
       callback();
       
     });
-  } else if (pageID == "books") {
+  } else if (pageID == "books2") {
     $.get(`pages/${pageID}.html`, function (data) {
       //   console.log("data " + data);
       $("#app").html(data);
