@@ -30,6 +30,18 @@ function changeRoute() {
 }
 function placeholder() {}
 
+function logIn() {
+  $(".login").on("click", function (e) {
+    console.log("submit");
+
+    let email = $(".email").val();
+    let password = $(".password").val();
+
+    $(".email").val("");
+    $(".password").val("");
+  });
+}
+
 function initSubmitListener() {
   $(".submit").on("click", function (e) {
     console.log("submit");
