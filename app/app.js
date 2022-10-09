@@ -79,10 +79,9 @@ function initSubmitListener() {
     }
     console.log(`${fn} ${ln} ${email} ${password}`);
 
-    var signUp = open("./pages/home.html");
-    signUp.alert("Thank you for signing up!");
-    signUp.focus();
-
+    // var signUp = open("home.html");
+    // signUp.alert("Thank you for signing up!");
+    // signUp.focus();
   });
 }
 
