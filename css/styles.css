@@ -326,20 +326,20 @@ footer .footerSocials a .social img {
   font-size: 16px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.accountPanel .signUpContainer .email {
+.accountPanel .signUpContainer .signUpEmail {
   border: none;
   border-bottom: 1px solid black;
 }
-.accountPanel .signUpContainer .email::placeholder {
+.accountPanel .signUpContainer .signUpEmail::placeholder {
   color: black;
   font-size: 16px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.accountPanel .signUpContainer .password {
+.accountPanel .signUpContainer .signUpPassword {
   border: none;
   border-bottom: 1px solid black;
 }
-.accountPanel .signUpContainer .password::placeholder {
+.accountPanel .signUpContainer .signUpPassword::placeholder {
   color: black;
   font-size: 16px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
