@@ -394,8 +394,9 @@ footer .footerSocials a .social img {
   flex-direction: column;
 }
 .blogContainer .blogHeadlines {
-  width: 842px;
+  width: 48%;
   height: 463px;
+  border: 5px solid orange;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -417,7 +418,7 @@ footer .footerSocials a .social img {
 .blogContainer .blogHeadlines .blogHeadlineWrapper .blogParagraph {
   text-align: center;
   font-size: 17px;
-  width: 413px;
+  width: 100%;
   height: 153px;
 }
 .blogContainer .blogHeadlines .blogHeadlineWrapper .blogBtnA {
@@ -449,7 +450,7 @@ footer .footerSocials a .social img {
 }
 .blogContainer .blogSection1 {
   height: 463px;
-  width: 1464px;
+  width: 90%;
   background-color: #587c83;
   margin-top: 117px;
   margin-bottom: 125px;
@@ -465,20 +466,25 @@ footer .footerSocials a .social img {
   justify-content: space-around;
 }
 .blogContainer .blogSection1 .twoPicturesSection1 .michelleObamaImg {
-  width: 250px;
-  height: 380px;
+  width: 35%;
+  height: 100%;
   background-image: url(/assets/images/becoming.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .blogContainer .blogSection1 .twoPicturesSection1 .violaDavisImg {
-  width: 250px;
-  height: 380px;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   background-image: url(/assets/images/finding-me.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .blogContainer .blogSection2 {
   height: 463px;
-  width: 1464px;
+  width: 90%;
   background-color: #587c83;
   margin-bottom: 125px;
   display: flex;
@@ -487,7 +493,7 @@ footer .footerSocials a .social img {
 }
 .blogContainer .blogSection3 {
   height: 463px;
-  width: 1464px;
+  width: 90%;
   background-color: #587c83;
   margin-bottom: 140px;
   display: flex;
