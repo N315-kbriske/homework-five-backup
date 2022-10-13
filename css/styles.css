@@ -396,7 +396,6 @@ footer .footerSocials a .social img {
 .blogContainer .blogHeadlines {
   width: 48%;
   height: 463px;
-  border: 5px solid orange;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -404,7 +403,7 @@ footer .footerSocials a .social img {
 }
 .blogContainer .blogHeadlines .blogHeadlineWrapper {
   color: #ffffff;
-  width: 427px;
+  max-width: 427px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -420,6 +419,7 @@ footer .footerSocials a .social img {
   font-size: 17px;
   width: 100%;
   height: 153px;
+  font-size: 17px;
 }
 .blogContainer .blogHeadlines .blogHeadlineWrapper .blogBtnA {
   text-decoration: none;
@@ -430,20 +430,24 @@ footer .footerSocials a .social img {
   align-items: center;
   justify-content: space-evenly;
   height: 68px;
-  width: 222px;
+  max-width: 225px;
   border: 1px solid #ffffff;
   text-decoration: none;
+  padding: 10px;
 }
 .blogContainer .sectionImage1 {
-  height: 463px;
-  width: 622px;
+  height: 100%;
+  max-width: 622px;
+  width: 50%;
   margin-right: 110px;
   background-image: url(/assets/images/open-book-blog.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .blogContainer .sectionImage2 {
-  height: 463px;
-  width: 622px;
+  height: 100%;
+  max-width: 622px;
+  width: 50%;
   margin-right: 110px;
   background-image: url(/assets/images/ereading-blog.jpg);
   background-size: cover;
@@ -456,11 +460,12 @@ footer .footerSocials a .social img {
   margin-bottom: 125px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .blogContainer .blogSection1 .twoPicturesSection1 {
-  height: 380px;
-  width: 732px;
+  height: 75%;
+  max-width: 622px;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: space-around;
