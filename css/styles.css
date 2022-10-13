@@ -213,6 +213,9 @@ footer .footerSocials a .social img {
   margin-right: 35px;
 }
 
+.row {
+  border: 5px solid maroon;
+}
 .row .bookRowTitle {
   width: 260px;
   height: 26px;
@@ -228,51 +231,47 @@ footer .footerSocials a .social img {
   width: 100%;
   display: flex;
   align-items: center;
-  align-items: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 5px solid orange;
   padding-left: 20px;
   margin-bottom: 140px;
 }
-.row .booksContent .rowContainer {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-left: 54px;
-  border: 2px dotted red;
-}
-.row .booksContent .rowContainer .bookRow {
+.row .booksContent .bookRow {
   border: 2px solid purple;
   display: flex;
   align-items: flex-start;
 }
-.row .booksContent .rowContainer .bookRow .bookImg {
+.row .booksContent .bookRow .bookImg {
   margin-right: 22px;
   width: 225px;
   height: 290px;
   background-size: cover;
 }
-.row .booksContent .rowContainer .bookRow .bookImg img {
+.row .booksContent .bookRow .bookImg img {
   width: 85%;
   height: 85%;
   background-size: cover;
 }
-.row .booksContent .rowContainer .bookRow .itemContainer {
+.row .booksContent .bookRow .itemContainer {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-between;
   border: 2px solid green;
 }
-.row .booksContent .rowContainer .bookRow .itemContainer .bookDescription {
+.row .booksContent .bookRow .itemContainer .bookDescription {
   width: 280px;
   height: 92px;
   margin-bottom: 58px;
 }
-.row .booksContent .rowContainer .bookRow .itemContainer .bookPrice {
+.row .booksContent .bookRow .itemContainer .bookPrice {
   width: 49px;
   height: 16px;
   margin-bottom: 34px;
 }
-.row .booksContent .rowContainer .bookRow .itemContainer .addBook {
+.row .booksContent .bookRow .itemContainer .addBook {
   width: 222px;
   height: 68px;
   background-color: white;
