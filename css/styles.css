@@ -69,6 +69,9 @@ nav a {
     width: 202px;
     height: 73px;
     margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
   nav .searchContain i {
     position: absolute;
@@ -213,9 +216,6 @@ footer .footerSocials a .social img {
   margin-right: 35px;
 }
 
-.row {
-  border: 5px solid maroon;
-}
 .row .bookRowTitle {
   width: 260px;
   height: 26px;
@@ -231,47 +231,51 @@ footer .footerSocials a .social img {
   width: 100%;
   display: flex;
   align-items: center;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  border: 5px solid orange;
+  align-items: flex-start;
   padding-left: 20px;
   margin-bottom: 140px;
 }
-.row .booksContent .bookRow {
+.row .booksContent .rowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 54px;
+  border: 2px dotted red;
+}
+.row .booksContent .rowContainer .bookRow {
   border: 2px solid purple;
   display: flex;
   align-items: flex-start;
 }
-.row .booksContent .bookRow .bookImg {
+.row .booksContent .rowContainer .bookRow .bookImg {
   margin-right: 22px;
   width: 225px;
   height: 290px;
   background-size: cover;
 }
-.row .booksContent .bookRow .bookImg img {
+.row .booksContent .rowContainer .bookRow .bookImg img {
   width: 85%;
   height: 85%;
   background-size: cover;
 }
-.row .booksContent .bookRow .itemContainer {
+.row .booksContent .rowContainer .bookRow .itemContainer {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-between;
   border: 2px solid green;
 }
-.row .booksContent .bookRow .itemContainer .bookDescription {
+.row .booksContent .rowContainer .bookRow .itemContainer .bookDescription {
   width: 280px;
   height: 92px;
   margin-bottom: 58px;
 }
-.row .booksContent .bookRow .itemContainer .bookPrice {
+.row .booksContent .rowContainer .bookRow .itemContainer .bookPrice {
   width: 49px;
   height: 16px;
   margin-bottom: 34px;
 }
-.row .booksContent .bookRow .itemContainer .addBook {
+.row .booksContent .rowContainer .bookRow .itemContainer .addBook {
   width: 222px;
   height: 68px;
   background-color: white;

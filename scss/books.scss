@@ -19,7 +19,7 @@
 // }
 .row {
   // width: 100%;
-  border: 5px solid maroon;
+  // border: 5px solid maroon;
   .bookRowTitle {
     width: 260px;
     height: 26px;
@@ -39,28 +39,24 @@
     align-items: center;
     // justify-content: space-evenly;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    
+    align-items: flex-start;
     // flex-direction: column;
-    border: 5px solid orange;
+    // border: 5px solid orange;
     padding-left: 20px;
     margin-bottom: 140px;
 
-    // .rowContainer {
-    //   //max-width: 90%;
-    //   display: flex;
-    //   align-items: center;
-    //   justify-content: flex-start;
-    //   margin-left: 54px;
-    //   border: 2px dotted red;
+    .rowContainer {
+      //max-width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-left: 54px;
+      border: 2px dotted red;
 
       .bookRow {
         border: 2px solid purple;
         display: flex;
         align-items: flex-start;
-       
 
         .bookImg {
           margin-right: 22px;
@@ -104,4 +100,4 @@
       }
     }
   }
-// }
+}
