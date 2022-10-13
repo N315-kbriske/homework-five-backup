@@ -51,3 +51,36 @@ nav {
       sans-serif;
   }
 }
+
+@media all and (max-width: 390px) {
+  nav {
+    border: 2px solid green;
+    width: 390px;
+
+    .logoLinkContain {
+      width: 202px;
+      height: 73px;
+      margin-left: 100px;
+      // display: flex;
+      // align-items: center;
+      // justify-content: space-evenly;
+    }
+
+    .searchContain {
+      i {
+        position: absolute;
+        padding: 2px;
+        // visibility: hidden;
+      }
+
+      #search {
+        width: 142px;
+        height: 16px;
+      }
+    }
+
+    a {
+      visibility: hidden;
+    }
+  }
+}

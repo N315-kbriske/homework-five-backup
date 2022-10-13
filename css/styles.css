@@ -60,6 +60,28 @@ nav a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+@media all and (max-width: 390px) {
+  nav {
+    border: 2px solid green;
+    width: 390px;
+  }
+  nav .logoLinkContain {
+    width: 202px;
+    height: 73px;
+    margin-left: 100px;
+  }
+  nav .searchContain i {
+    position: absolute;
+    padding: 2px;
+  }
+  nav .searchContain #search {
+    width: 142px;
+    height: 16px;
+  }
+  nav a {
+    visibility: hidden;
+  }
+}
 .homeContent {
   max-width: 100%;
 }
@@ -116,6 +138,11 @@ nav a {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@media screen and (max-width: 390px) {
+  .homeContent {
+    border: 2px solid red;
+  }
+}
 .aboutSection {
   max-width: 1920px;
   height: 700px;
