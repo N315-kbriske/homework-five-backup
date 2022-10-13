@@ -465,7 +465,7 @@ footer .footerSocials a .social img {
 .blogContainer .blogSection1 .twoPicturesSection1 {
   height: 75%;
   max-width: 622px;
-  width: 50%;
+  width: 55%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -494,7 +494,7 @@ footer .footerSocials a .social img {
   margin-bottom: 125px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 .blogContainer .blogSection3 {
   height: 463px;
@@ -503,19 +503,21 @@ footer .footerSocials a .social img {
   margin-bottom: 140px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
 .bookclubContainer {
-  min-height: 1924px;
-  min-width: 500px;
+  max-width: 1924px;
+  min-height: 2059px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .bookclubContainer .bookclubHero {
+  padding: 20px;
   height: 463px;
-  width: 1464px;
+  max-width: 1464px;
+  width: 100%;
   background: linear-gradient(to bottom, rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(/assets/images/book-club-hero.jpg);
   background-size: cover;
   margin-top: 172px;
@@ -538,9 +540,12 @@ footer .footerSocials a .social img {
   margin-top: -110px;
 }
 .bookclubContainer .bookclubContent {
-  margin-left: 100px;
+  width: 100%;
+  height: 100%;
   display: flex;
+  align-items: flex-start;
   justify-content: space-evenly;
+  padding: 20px;
 }
 .bookclubContainer .bookclubContent .bookclubImage {
   width: 622px;
@@ -548,24 +553,29 @@ footer .footerSocials a .social img {
   background-image: url(/assets/images/open-book-blog.jpg);
   background-size: cover;
   margin-right: 39px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .bookclubContainer .bookclubContent .bookclubParagraph {
-  width: 898px;
-  height: 882px;
-  font-size: 16;
+  padding: 10px;
+  max-width: 898px;
+  width: 70%;
+  font-size: 16px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .eReadingContainer {
-  min-height: 1924px;
-  min-width: 500px;
+  max-width: 1924px;
+  min-height: 2059px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .eReadingContainer .eReadingHero {
+  padding: 20px;
   height: 463px;
-  width: 1464px;
+  max-width: 1464px;
+  width: 100%;
   background: linear-gradient(to bottom, rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(/assets/images/eread-hero.jpg);
   background-size: cover;
   margin-top: 172px;
@@ -588,9 +598,12 @@ footer .footerSocials a .social img {
   margin-top: -110px;
 }
 .eReadingContainer .eReadingContent {
-  margin-left: 100px;
+  width: 100%;
+  height: 100%;
   display: flex;
+  align-items: flex-start;
   justify-content: space-evenly;
+  padding: 20px;
 }
 .eReadingContainer .eReadingContent .eReadingImage {
   width: 622px;
@@ -598,11 +611,14 @@ footer .footerSocials a .social img {
   background-image: url(/assets/images/ereading-blog.jpg);
   background-size: cover;
   margin-right: 39px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .eReadingContainer .eReadingContent .eReadingParagraph {
-  width: 898px;
-  height: 882px;
-  font-size: 16;
+  padding: 10px;
+  max-width: 898px;
+  width: 70%;
+  font-size: 16px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -617,7 +633,7 @@ footer .footerSocials a .social img {
   height: 463px;
   width: 1464px;
   background: linear-gradient(to bottom, rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(/assets/images/february-favorites-hero.jpg);
-  background-size: cover;
+  background-size: contain;
   margin-top: 140px;
   margin-bottom: 125px;
   display: flex;
@@ -634,16 +650,17 @@ footer .footerSocials a .social img {
 .ffContainer .ffHero .ffHeroDescription {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #ffffff;
-  font-size: 26px;
+  font-size: 2vw;
   margin-top: -75px;
 }
 .ffContainer .ffHero .ffHeroQuote {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 17px;
   margin-top: -70px;
 }
 .ffContainer .ffContain {
+  padding-bottom: 50px;
   max-width: 90%;
   max-height: 380px;
   display: flex;
@@ -655,15 +672,18 @@ footer .footerSocials a .social img {
   margin-right: 35px;
 }
 .ffContainer .ffContain .postImage img {
-  width: 250px;
-  height: 380px;
+  max-width: 250px;
+  max-height: 380px;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
 }
 .ffContainer .ffContain .postContain {
   width: 100%;
   height: 253px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 10%;
+  margin-bottom: 100px;
 }
 .ffContainer .ffContain .postContain .postHead {
   font-size: 26px;

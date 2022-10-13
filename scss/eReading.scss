@@ -1,19 +1,20 @@
 .eReadingContainer {
-    min-height: 1924px;
-    min-width: 500px;
-
+    max-width: 1924px;
+    min-height: 2059px;
+  
     display: flex;
     align-items: center;
     //justify-content: space-evenly;
-    
+  
     flex-direction: column;
-
    
 
 
     .eReadingHero {
-        height: 463px;
-        width: 1464px;
+        padding: 20px;
+    height: 463px;
+    max-width: 1464px;
+    width: 100%;
 
 
         background: linear-gradient(to bottom, 
@@ -54,12 +55,15 @@
 
     .eReadingContent {
 
-        margin-left: 100px;
-
+        width: 100%;
+        height: 100%;
+     
         display: flex;
-       // align-items: center;
+        align-items:flex-start;
         justify-content: space-evenly;
-
+        
+         padding: 20px;
+         // border: 5px dotted black;
     
         
         .eReadingImage {
@@ -72,17 +76,22 @@
             background-size: cover;
 
             margin-right: 39px;
-        }
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+            
+          }
+        
 
 
         .eReadingParagraph {
 
-            //border: 5px dotted orangered;
-            width: 898px;
-            height: 882px;
-            font-size: 16;
+            padding: 10px;
+            // border: 5px dotted orangered;
+           max-width: 898px;
+            width: 70%;
+            font-size: 16px;
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
         }
     }
 }
