@@ -759,7 +759,6 @@ footer .footerSocials a .social img {
 }
 
 .cartPage {
-  min-height: 100vh;
   max-width: 1920px;
 }
 .cartPage .cartItemContainer {

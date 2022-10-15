@@ -177,13 +177,13 @@ export function changePage(pageID, callback) {
               vel eros.
             </div>
             <div class="bookPricing">$${book.price}</div>
-            <button class="addBook">ADD TO CART</button>
+            <button class="addBook" >ADD TO CART</button>
         </div>
     `);
       });
       // $.each(homeBookList, function (index, book) {});
 
-      // callback();
+      callback();
     });
   } else if (pageID == "books") {
     $.get(`pages/${pageID}.html`, function (data) {
@@ -210,9 +210,9 @@ export function changePage(pageID, callback) {
     `);
       });
 
-      // $.each(bookList, function (index, book) {});
+      //$.each(bookList, function (index, book) {});
 
-      // callback();
+      callback();
     });
   } else if (pageID == "account") {
     $.get(`pages/${pageID}.html`, function (data) {
