@@ -177,7 +177,10 @@ export function changePage(pageID, callback) {
               vel eros.
             </div>
             <div class="bookPricing">$${book.price}</div>
-            <button class="addBook" >ADD TO CART</button>
+            <div class="itemContainer">
+              <button class="addBook" id="${index}">ADD TO CART</button>
+            </div>
+        </div>
         </div>
     `);
       });
@@ -235,7 +238,7 @@ export function changePage(pageID, callback) {
     <div class="itemContent">
       <div class="itemTitle">${book.bookTitle}</div>
       <div class="itemPrice">$${book.price}</div>
-      <div class="itemStock">$${book.bookAvail}</div>
+      <div class="itemStock">${book.bookAvail}</div>
       <div class="qtyContain">
         <div class="qty">Qty: 1</div>
         <button class="changeQty">change</button>
