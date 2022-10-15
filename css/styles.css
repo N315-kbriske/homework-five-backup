@@ -163,6 +163,10 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: flex-end;
 }
 .homeHeroContainer .homeHero {
   width: 75%;
@@ -176,6 +180,25 @@ nav a {
   margin: 0px auto 176px auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 100px;
+}
+.homeHeroContainer #homeHeroText {
+  height: 100%;
+  width: 29%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #ffffff;
+  margin-right: 100px;
+  position: absolute;
+}
+.homeHeroContainer #homeHeroText #homeHeroHeader {
+  font-size: 32px;
+}
+.homeHeroContainer #homeHeroText #homeHeroLine {
+  font-size: 13px;
+  margin-top: -250px;
 }
 
 @media screen and (max-width: 390px) {
@@ -830,6 +853,72 @@ footer .footerSocials a .social img {
   border: 2px solid red;
   width: 222px;
   height: 68px;
+}
+
+@media screen and (max-width: 780px) {
+  .homeContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: burlywood;
+    max-width: 552px;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100vh;
+  }
+  .homeContent .homeHeroContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px dotted burlywood;
+    max-height: 329px;
+    width: 100%;
+    max-width: 552px;
+    width: 100%;
+    background-color: #587c83;
+    margin: 100px 75px;
+  }
+  .homeContent .homeHeroContainer .homeHero {
+    position: absolute;
+    background: none;
+    background-image: url(/assets/images/home-hero.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50%;
+    width: 50%;
+    max-width: 273px;
+    max-height: 181px;
+    margin-top: 0 auto 0 auto;
+    top: -15px;
+    left: 55px;
+    padding: 10px;
+  }
+  .homeContent .homeHeroContainer #homeHeroText {
+    margin-right: 0px;
+    right: 0px;
+    padding-right: 15px;
+  }
+  .homeContent .homeHeroContainer #homeHeroText #homeHeroHeader {
+    font-size: 12px;
+  }
+  .homeContent .homeHeroContainer #homeHeroText #homeHeroLine {
+    font-size: 7px;
+    margin-top: -80px;
+  }
+  .homeContent .homeBooks {
+    flex-direction: column;
+  }
+  .homeContent .homeBooks .panelContainer .bookDetailsContain .bookImage {
+    max-width: 175px;
+    max-height: 281px;
+  }
+  .homeContent .homeBooks .panelContainer .bookDetailsContain .bookDescribe {
+    font-size: 11px;
+  }
+  .homeContent .homeBooks .panelContainer .bookDetailsContain .bookPricing {
+    font-size: 11px;
+    margin-top: -50px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
