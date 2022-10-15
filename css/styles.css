@@ -859,7 +859,6 @@ footer .footerSocials a .social img {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: burlywood;
     max-width: 552px;
     width: 80%;
     margin: 0 auto;
@@ -869,7 +868,6 @@ footer .footerSocials a .social img {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: 2px dotted burlywood;
     max-height: 329px;
     width: 100%;
     max-width: 552px;
