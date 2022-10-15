@@ -1,80 +1,135 @@
 .homeContent {
-  max-width: 100%;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
+ 
+    width: 100%;
+    
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
 
   .homeBooks {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-  }
-  .homeHero {
-    // padding: 268px 210px 0px 210px;
-    max-width: 1500px;
-    height: 530px;
-    background: linear-gradient(
-        rgba(88, 124, 131, 0.6),
-        rgba(88, 124, 131, 0.6)
-      ),
-      url(/assets/images/home-hero.jpg);
-    background-position: center;
-    // background-size: 120%;
-    background-size: cover;
-    // transform: scale(5,1);
-    background-repeat: no-repeat;
-    overflow: hidden;
-    margin: 0px auto 176px auto;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-
-  .panelContainer {
-    max-width: 100%;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    // border: 2px solid purple;
-    // padding: 0px 120px 0px 120px;
+    width: 90%;
+    height: 50%;
+    // border: 5px dotted black;
 
-    .bookDetailsContain {
-      height: 841px;
-      //   border: 2px solid red;
+
+    .panelContainer {
+      width: 100%;
+      height: 100%;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      flex-direction: column;
-      margin-bottom: 188px;
+      // border: 2px solid purple;
+      // padding: 0px 120px 0px 120px;
 
-      .bookImage {
-        img {
-          width: 306px;
-          height: 491px;
+      .bookDetailsContain {
+        height: 100%;
+        width: 100%;
+        // border: 2px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-bottom: 188px;
+
+        .bookImage {
+
+          height: 60%;
+          width: 75%;
+
+          // max-width: 306px;
+          // max-height: 491px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          
+          img {
+            max-width: 327px;
+            max-height: 491px;
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .bookDescribe {
+
+          max-width: 413px;
+          height: 175px;
+          font-size: 16px;
+          text-align: center;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          padding: 10;
+          
+        }
+
+        .bookPricing {
+
+          font-size: 32px;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          font-weight: bold;
+          height: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          
+        }
+
+        .addBook {
+          width: 222px;
+          height: 68px;
+          background-color: white;
+          border: 1px solid black;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         }
       }
-
-      .bookDescribe {
-        width: 413px;
-        font-size: 16px;
-        text-align: center;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
-
-      .bookPricing {
-        font-size: 32px;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: bold;
-      }
-
-      .addBook {
-        width: 222px;
-        height: 68px;
-        background-color: white;
-        border: 1px solid black;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
     }
-  }
 }
+  
+  }
+
+  .homeHeroContainer {
+   
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: aquamarine;
+    
+    .homeHero {
+      // padding: 268px 210px 0px 210px;
+      // border: 2px dotted red;
+      width: 75%;
+      height: 65%;
+      max-width: 1500px;
+      max-height: 530px;
+      background: linear-gradient(
+          rgba(88, 124, 131, 0.6),
+          rgba(88, 124, 131, 0.6)
+        ),
+        url(/assets/images/home-hero.jpg);
+      background-position: center;
+      // background-size: 120%;
+      background-size: cover;
+      // transform: scale(5,1);
+      background-repeat: no-repeat;
+      // overflow: hidden;
+      margin: 0px auto 176px auto;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin-top: 100px;
+    }
+
+  }
+  
+
+  
 
 @media screen and (max-width: 390px) {
   .homeContent {
