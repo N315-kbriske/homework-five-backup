@@ -1,0 +1,36 @@
+@media screen and (max-width: 780px) {
+
+.row {
+
+    width: 80%;
+    margin: 0 auto;
+
+
+    .bookRowTitle {
+        font-size: 12px;
+        text-align: left;
+        margin-left: -90px;
+        
+    }
+
+    .booksContent {
+
+
+        flex-direction: column;
+
+        .bookRow {
+            border: 2px dotted red;
+            margin-bottom: 40px;
+            .itemContainer {
+                
+                .bookDescription {
+                    width: 183px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+
+}

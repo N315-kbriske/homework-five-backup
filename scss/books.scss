@@ -54,7 +54,7 @@
     //   border: 2px dotted red;
 
       .bookRow {
-        border: 2px solid purple;
+        // border: 2px solid purple;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -62,7 +62,7 @@
         max-height: 300px;
 
         .bookImg {
-          margin-right: 22px;
+          margin-right: 8px;
           width: 100%;
           height: 100%;
           max-width: 225px;
@@ -83,12 +83,13 @@
           align-items: flex-start;
           flex-direction: column;
           justify-content: space-between;
-          border: 2px solid green;
+       
+          padding-right: 20px;
 
           .bookDescription {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             
-            font-size: .9vw;
+            font-size: min(1vw, 20px);
             width: 100%;
             height: 92px;
             margin-bottom: 58px;
