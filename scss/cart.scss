@@ -1,12 +1,18 @@
+.items {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  width: 90%;
+
 .cartPage {
   // min-height: 100vh;
+  width: 90%;
   max-width: 1920px;
   //   border: 2px dotted dodgerblue;
   //   padding-left: 135px;
   //   padding-top: 152px;
   
   .cartItemContainer {
-    // width: 100%;
+    width: 90%;
     height: 566px;
     display: flex;
     align-items: flex-start;
@@ -15,20 +21,31 @@
     // justify-content: space-evenly;
 
     .cartItemImage {
+      
+        max-width: 205px;
+        max-height: 317px;
       padding-right: 22px;
       margin-right: 50px;
       img {
-        width: 205px;
-        height: 317px;
+        height: 100%;
+        width: 100%;
+        max-width: 205px;
+        max-height: 317px;
       }
     }
     .itemContent {
-      width: 185px;
+      width: 100%;
       height: 158px;
       //   border: 2px dotted red;
       display: flex;
       justify-content: space-between;
       flex-direction: column;
+     
+
+      .itemTitle {
+        font-size: 18px;
+        font-weight: nine;
+      }
     }
     .itemPrice {
     }
@@ -56,4 +73,5 @@
       }
     }
   }
+}
 }

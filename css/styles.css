@@ -583,20 +583,22 @@ footer .footerSocials a .social img {
 }
 
 .bookclubContainer {
-  max-width: 1924px;
-  min-height: 2059px;
+  max-width: 90%;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 0 auto;
 }
 .bookclubContainer .bookclubHero {
+  margin: 0 auto;
   padding: 20px;
   height: 463px;
   max-width: 1464px;
   width: 100%;
   background: linear-gradient(to bottom, rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(/assets/images/book-club-hero.jpg);
   background-size: cover;
-  margin-top: 172px;
+  margin-top: 120px;
   margin-bottom: 125px;
   display: flex;
   align-items: center;
@@ -606,14 +608,12 @@ footer .footerSocials a .social img {
 .bookclubContainer .bookclubHero .bcHeroTitle {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #ffffff;
-  font-size: 32px;
-  margin-top: -20px;
+  font-size: min(2.2vw, 32px);
 }
 .bookclubContainer .bookclubHero .bcHeroDescription {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #ffffff;
-  font-size: 26px;
-  margin-top: -110px;
+  font-size: min(1.8vw, 26px);
 }
 .bookclubContainer .bookclubContent {
   width: 100%;
@@ -636,25 +636,27 @@ footer .footerSocials a .social img {
   padding: 10px;
   max-width: 898px;
   width: 70%;
-  font-size: 16px;
+  font-size: min(1.2vw, 16px);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .eReadingContainer {
-  max-width: 1924px;
-  min-height: 2059px;
+  width: 90%;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 0 auto;
 }
 .eReadingContainer .eReadingHero {
+  margin: 0 auto;
   padding: 20px;
   height: 463px;
   max-width: 1464px;
   width: 100%;
   background: linear-gradient(to bottom, rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(/assets/images/eread-hero.jpg);
   background-size: cover;
-  margin-top: 172px;
+  margin-top: 120px;
   margin-bottom: 125px;
   display: flex;
   align-items: center;
@@ -664,14 +666,12 @@ footer .footerSocials a .social img {
 .eReadingContainer .eReadingHero .eReadingTitle {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #ffffff;
-  font-size: 32px;
-  margin-top: -20px;
+  font-size: min(2.2vw, 32px);
 }
 .eReadingContainer .eReadingHero .eReadingHeroDescription {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #ffffff;
-  font-size: 26px;
-  margin-top: -110px;
+  font-size: min(1.8vw, 26px);
 }
 .eReadingContainer .eReadingContent {
   width: 100%;
@@ -694,7 +694,7 @@ footer .footerSocials a .social img {
   padding: 10px;
   max-width: 898px;
   width: 70%;
-  font-size: 16px;
+  font-size: min(1.2vw, 16px);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -784,46 +784,61 @@ footer .footerSocials a .social img {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.cartPage {
+.items {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  width: 90%;
+}
+.items .cartPage {
+  width: 90%;
   max-width: 1920px;
 }
-.cartPage .cartItemContainer {
+.items .cartPage .cartItemContainer {
+  width: 90%;
   height: 566px;
   display: flex;
   align-items: flex-start;
   padding: 152px 0px 0px 135px;
   border-bottom: 1px solid black;
 }
-.cartPage .cartItemContainer .cartItemImage {
+.items .cartPage .cartItemContainer .cartItemImage {
+  max-width: 205px;
+  max-height: 317px;
   padding-right: 22px;
   margin-right: 50px;
 }
-.cartPage .cartItemContainer .cartItemImage img {
-  width: 205px;
-  height: 317px;
+.items .cartPage .cartItemContainer .cartItemImage img {
+  height: 100%;
+  width: 100%;
+  max-width: 205px;
+  max-height: 317px;
 }
-.cartPage .cartItemContainer .itemContent {
-  width: 185px;
+.items .cartPage .cartItemContainer .itemContent {
+  width: 100%;
   height: 158px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
-.cartPage .cartItemContainer .itemStock {
+.items .cartPage .cartItemContainer .itemContent .itemTitle {
+  font-size: 18px;
+  font-weight: nine;
+}
+.items .cartPage .cartItemContainer .itemStock {
   margin-top: -35px;
 }
-.cartPage .cartItemContainer .qtyContain {
+.items .cartPage .cartItemContainer .qtyContain {
   width: 166px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.cartPage .cartItemContainer .qtyContain .changeQty {
+.items .cartPage .cartItemContainer .qtyContain .changeQty {
   border: none;
   border-bottom: 1px solid black;
   background-color: white;
 }
-.cartPage .cartItemContainer .qtyContain .delete {
+.items .cartPage .cartItemContainer .qtyContain .delete {
   border: none;
   border-bottom: 1px solid black;
   background-color: white;
@@ -994,7 +1009,6 @@ footer .footerSocials a .social img {
     flex-direction: column;
   }
   .row .booksContent .bookRow {
-    border: 2px dotted red;
     margin-bottom: 40px;
   }
   .row .booksContent .bookRow .itemContainer .bookDescription {
@@ -1019,7 +1033,6 @@ footer .footerSocials a .social img {
     justify-content: space-evenly;
     text-align: center;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: red;
   }
   .blogContainer .blogHeadlines .blogHeadlineWrapper {
     color: #ffffff;
@@ -1071,7 +1084,7 @@ footer .footerSocials a .social img {
     margin-bottom: 125px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   .blogContainer .blogSection1 .twoPicturesSection1 {
     height: 75%;
@@ -1105,7 +1118,7 @@ footer .footerSocials a .social img {
     margin-bottom: 125px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   .blogContainer .blogSection3 {
     height: 263px;
@@ -1114,7 +1127,7 @@ footer .footerSocials a .social img {
     margin-bottom: 140px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 }
 @media screen and (max-width: 780px) {
@@ -1132,12 +1145,74 @@ footer .footerSocials a .social img {
   }
 }
 @media screen and (max-width: 780px) {
+  .bookclubContainer .bookclubHero {
+    max-height: 195px;
+  }
+}
+@media screen and (max-width: 780px) {
   .eReadingContainer .eReadingHero {
-    height: 210px;
+    max-height: 195px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .items {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
     width: 90%;
-    background-size: cover;
-    margin-top: -200px;
-    margin-bottom: 0px;
+  }
+  .items .cartPage {
+    width: 90%;
+    max-width: 1920px;
+  }
+  .items .cartPage .cartItemContainer {
+    width: 90%;
+    height: 566px;
+    display: flex;
+    align-items: flex-start;
+    padding: 152px 0px 0px 135px;
+    border-bottom: 1px solid black;
+  }
+  .items .cartPage .cartItemContainer .cartItemImage {
+    padding-right: 22px;
+    margin-right: 50px;
+  }
+  .items .cartPage .cartItemContainer .cartItemImage img {
+    height: 100%;
+    width: 100%;
+    max-width: 205px;
+    max-height: 317px;
+    min-height: 110px;
+    min-width: 100px;
+  }
+  .items .cartPage .cartItemContainer .itemContent {
+    width: 185px;
+    height: 158px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .items .cartPage .cartItemContainer .itemContent .itemTitle {
+    font-size: 18px;
+    font-weight: nine;
+  }
+  .items .cartPage .cartItemContainer .itemStock {
+    margin-top: -35px;
+  }
+  .items .cartPage .cartItemContainer .qtyContain {
+    width: 166px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .items .cartPage .cartItemContainer .qtyContain .changeQty {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: white;
+  }
+  .items .cartPage .cartItemContainer .qtyContain .delete {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: white;
   }
 }
 
