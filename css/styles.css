@@ -474,6 +474,7 @@ footer .footerSocials a .social img {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .blogContainer .blogHeadlines .blogHeadlineWrapper {
@@ -491,10 +492,9 @@ footer .footerSocials a .social img {
 }
 .blogContainer .blogHeadlines .blogHeadlineWrapper .blogParagraph {
   text-align: center;
-  font-size: 17px;
+  font-size: min(1.4vw, 16px);
   width: 100%;
   height: 153px;
-  font-size: 16px;
   padding: 20px;
 }
 .blogContainer .blogHeadlines .blogHeadlineWrapper .blogBtnA {
@@ -699,45 +699,55 @@ footer .footerSocials a .social img {
 }
 
 .ffContainer {
-  min-height: 1924px;
-  min-width: 500px;
+  height: 1924px;
+  width: 90%;
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
   flex-direction: column;
 }
 .ffContainer .ffHero {
-  height: 463px;
-  width: 1464px;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  max-height: 463px;
+  max-width: 1464px;
   background: linear-gradient(to bottom, rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(/assets/images/february-favorites-hero.jpg);
-  background-size: contain;
   margin-top: 140px;
   margin-bottom: 125px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ffContainer .ffHero img {
+  width: 100%;
+  height: 100%;
 }
 .ffContainer .ffHero .ffTitle {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #ffffff;
-  font-size: 32px;
+  font-size: min(2.2vw, 32px);
   margin-top: -20px;
 }
 .ffContainer .ffHero .ffHeroDescription {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #ffffff;
-  font-size: 2vw;
+  font-size: min(1.8vw, 26px);
   margin-top: -75px;
 }
 .ffContainer .ffHero .ffHeroQuote {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #ffffff;
-  font-size: 17px;
+  font-size: min(1.8vw, 17px);
   margin-top: -70px;
 }
 .ffContainer .ffContain {
   padding-bottom: 50px;
-  max-width: 90%;
+  max-width: 95%;
   max-height: 380px;
   display: flex;
   align-items: center;
@@ -746,6 +756,7 @@ footer .footerSocials a .social img {
 }
 .ffContainer .ffContain .postImage {
   margin-right: 35px;
+  margin-top: -80px;
 }
 .ffContainer .ffContain .postImage img {
   max-width: 250px;
@@ -762,14 +773,14 @@ footer .footerSocials a .social img {
   margin-bottom: 100px;
 }
 .ffContainer .ffContain .postContain .postHead {
-  font-size: 26px;
+  font-size: min(2.5vw, 26px);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 60px;
   font-weight: bold;
 }
 .ffContainer .ffContain .postContain .postContent {
   font-weight: bolder;
-  font-size: 16px;
+  font-size: min(1.2vw, 16px);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -989,6 +1000,144 @@ footer .footerSocials a .social img {
   .row .booksContent .bookRow .itemContainer .bookDescription {
     width: 183px;
     font-size: 13px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .blogContainer {
+    min-height: 500px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .blogContainer .blogHeadlines {
+    width: 223px;
+    height: 263px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: red;
+  }
+  .blogContainer .blogHeadlines .blogHeadlineWrapper {
+    color: #ffffff;
+    width: 100%;
+    max-height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .blogContainer .blogHeadlines .blogHeadlineWrapper .blogTitle {
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  .blogContainer .blogHeadlines .blogHeadlineWrapper .blogParagraph {
+    text-align: center;
+    font-size: min(1.4vw, 16px);
+    width: 100%;
+    padding: 20px;
+  }
+  .blogContainer .blogHeadlines .blogHeadlineWrapper .blogBtnA {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .blogContainer .blogHeadlines .blogHeadlineWrapper .blogBtnA .blogBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 38px;
+    max-width: 225px;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  .blogContainer .sectionImage1 {
+    height: 100%;
+    background-image: url(/assets/images/open-book-blog.jpg);
+  }
+  .blogContainer .sectionImage2 {
+    height: 100%;
+    background-image: url(/assets/images/ereading-blog.jpg);
+  }
+  .blogContainer .blogSection1 {
+    max-height: 263px;
+    width: 90%;
+    background-color: #587c83;
+    margin-top: 117px;
+    margin-bottom: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .blogContainer .blogSection1 .twoPicturesSection1 {
+    height: 75%;
+    max-width: 622px;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .blogContainer .blogSection1 .twoPicturesSection1 .michelleObamaImg {
+    width: 35%;
+    height: 100%;
+    background-image: url(/assets/images/becoming.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .blogContainer .blogSection1 .twoPicturesSection1 .violaDavisImg {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(/assets/images/finding-me.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .blogContainer .blogSection2 {
+    height: 263px;
+    width: 90%;
+    background-color: #587c83;
+    margin-bottom: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .blogContainer .blogSection3 {
+    height: 263px;
+    width: 90%;
+    background-color: #587c83;
+    margin-bottom: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 780px) {
+  .ffContainer .ffHero {
+    height: 210px;
+    width: 90%;
+    background-size: cover;
+    margin-top: -200px;
+    margin-bottom: 0px;
+  }
+  .ffContainer .ffContain {
+    margin-top: 0px;
+    margin-top: -500px;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .eReadingContainer .eReadingHero {
+    height: 210px;
+    width: 90%;
+    background-size: cover;
+    margin-top: -200px;
+    margin-bottom: 0px;
   }
 }
 
