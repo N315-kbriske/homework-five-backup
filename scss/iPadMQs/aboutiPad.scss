@@ -1,0 +1,57 @@
+@media screen and (max-width: 780px) {
+.aboutSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 90%;
+    // max-width: 522px;
+    min-height: 100vh;
+
+    margin: 0 auto;
+    padding: 0px 0px 0px 0px;
+    // margin-top: 20px;
+    min-height: 40vh;
+
+    .abtBookImg {
+        display: flex;
+        align-items: center;
+     
+        
+        justify-content: flex-start;
+
+            img {
+
+                width: 245px;
+                height: 380px;
+              
+
+
+            }
+
+
+    }
+
+    .abtInfoContain {
+
+        width: 75%;
+
+        text-align: center;
+        margin-top: 40px;
+
+        .aboutHeader {
+            font-size: 14px;
+            margin-bottom: 41px;
+          }
+          .aboutSubHeader {
+            font-size: 12px;
+            margin-bottom: 70px;
+          }
+          .aboutContent {
+            font-size: 10px;
+          }
+
+    }
+}
+
+}

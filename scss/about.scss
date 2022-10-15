@@ -4,22 +4,29 @@
 
 .aboutSection {
   max-width: 1920px;
-  height: 700px;
+  min-height: 700px;
   display: flex;
   //   align-items: center;
   justify-content: space-evenly;
   padding: 0px 90px 0px 70px;
   margin-top: 180px;
+  // background-color: rebeccapurple;
 
   .abtBookImg {
-    // width: 393px;
+    // width: 50%;
     // height: 587px;
     // border: 2px solid red;
 
     img {
-      width: 393px;
-      height: 587px;
+      // height: 100%;
+      width: 100%;
+      max-width: 393px;
+      max-height: 587px;
       padding: 40px;
+
+      width: 245px;
+      height: 380px;
+      background-size: contain;
     }
   }
 

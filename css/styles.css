@@ -25,11 +25,19 @@ p {
 }
 
 nav {
+  width: 100%;
   height: 108px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   border-bottom: 1px solid black;
+}
+nav #aContain {
+  width: 33%;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 nav .logoLinkContain {
   width: 202px;
@@ -42,12 +50,16 @@ nav .logoLinkContain .logoImage img {
   width: 73px;
   height: 73px;
 }
+nav .searchContain {
+  width: 604px;
+}
 nav .searchContain i {
   position: absolute;
   padding: 12px;
 }
 nav .searchContain #search {
-  width: 604px;
+  width: 100%;
+  max-width: 640px;
   height: 44px;
   background-color: #587c83;
   opacity: 35%;
@@ -208,16 +220,20 @@ nav a {
 }
 .aboutSection {
   max-width: 1920px;
-  height: 700px;
+  min-height: 700px;
   display: flex;
   justify-content: space-evenly;
   padding: 0px 90px 0px 70px;
   margin-top: 180px;
 }
 .aboutSection .abtBookImg img {
-  width: 393px;
-  height: 587px;
+  width: 100%;
+  max-width: 393px;
+  max-height: 587px;
   padding: 40px;
+  width: 245px;
+  height: 380px;
+  background-size: contain;
 }
 .aboutSection .abtInfoContain {
   width: 1134px;
@@ -915,6 +931,43 @@ footer .footerSocials a .social img {
   .homeContent .homeBooks .panelContainer .bookDetailsContain .bookPricing {
     font-size: 11px;
     margin-top: -50px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .aboutSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0px 0px 0px 0px;
+    min-height: 40vh;
+  }
+  .aboutSection .abtBookImg {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .aboutSection .abtBookImg img {
+    width: 245px;
+    height: 380px;
+  }
+  .aboutSection .abtInfoContain {
+    width: 75%;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .aboutSection .abtInfoContain .aboutHeader {
+    font-size: 14px;
+    margin-bottom: 41px;
+  }
+  .aboutSection .abtInfoContain .aboutSubHeader {
+    font-size: 12px;
+    margin-bottom: 70px;
+  }
+  .aboutSection .abtInfoContain .aboutContent {
+    font-size: 10px;
   }
 }
 
