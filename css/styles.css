@@ -206,11 +206,11 @@ nav a {
   position: absolute;
 }
 .homeHeroContainer #homeHeroText #homeHeroHeader {
-  font-size: 32px;
+  font-size: 30px;
 }
 .homeHeroContainer #homeHeroText #homeHeroLine {
   font-size: 13px;
-  margin-top: -250px;
+  margin-top: -190px;
 }
 
 .aboutSection {
@@ -903,7 +903,7 @@ footer .footerSocials a .social img {
   .homeContent .homeHeroContainer {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     max-height: 329px;
     width: 100%;
     max-width: 552px;
@@ -914,7 +914,7 @@ footer .footerSocials a .social img {
   .homeContent .homeHeroContainer .homeHero {
     position: absolute;
     background: none;
-    background-image: url(/assets/images/home-hero.jpg);
+    background-image: url(../assets/images/home-hero.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     height: 50%;
@@ -930,6 +930,9 @@ footer .footerSocials a .social img {
     margin-right: 0px;
     right: 0px;
     padding-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
   .homeContent .homeHeroContainer #homeHeroText #homeHeroHeader {
     font-size: 12px;

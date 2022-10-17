@@ -14,7 +14,7 @@
         display: flex;
         align-items: center;
        
-        justify-content: space-around;
+        justify-content: space-between;
         // border: 2px dotted burlywood;
 
         max-height: 329px;
@@ -26,7 +26,7 @@
         .homeHero {
             position: absolute;
             background: none;
-            background-image: url(/assets/images/home-hero.jpg);
+            background-image: url(../assets/images/home-hero.jpg);
             background-size: contain;
             background-repeat: no-repeat;
             height: 50%;
@@ -45,9 +45,15 @@
             margin-right: 0px;
            right: 0px;
            padding-right: 15px;
+           display: flex;
+           align-items: center;
+           justify-content: space-evenly;
+        //    padding: 20px;
+           
 
             #homeHeroHeader {
                 font-size: 12px;
+                // margin-bottom: 50px;
 
 
             }
