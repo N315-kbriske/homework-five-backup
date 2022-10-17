@@ -1,7 +1,7 @@
 # Homework 5
 
-Team Members: Giovanni Arizola, Keegan Briskey
-Web4 Link: [Link](https://in-info-web4.informatics.iupui.edu/~garizola/booknook/#home)
+- Team Members: Giovanni Arizola, Keegan Briskey
+- Web4 Link: [Link](https://in-info-web4.informatics.iupui.edu/~garizola/booknook/#home)
 
 ## Purpose
 
