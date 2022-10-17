@@ -167,7 +167,7 @@ export function changePage(pageID, callback) {
         <div class="panelContainer">
           <div class="bookDetailsContain">
             <div class="bookImage">
-            <img src="../images/${book.bookImage}" alt="${book.bookTitle}" />
+            <img src="./images/${book.bookImage}" alt="${book.bookTitle}" />
             </div>
       
             <div class="bookDescribe">
@@ -199,7 +199,7 @@ export function changePage(pageID, callback) {
     <div class="rowContainer">
       <div class="bookRow">
         <div class="bookImg">
-          <img src="../images/${book.bookImage}" alt="${book.bookTitle}" />
+          <img src="./images/${book.bookImage}" alt="${book.bookTitle}" />
         </div>
 
         <div class="itemContainer">
@@ -233,7 +233,7 @@ export function changePage(pageID, callback) {
         $(".items").append(`<div class="cartPage">
   <div class="cartItemContainer">
     <div class="cartItemImage">
-      <img src="../images/${book.bookImage}" alt="" />
+      <img src="./images/${book.bookImage}" alt="" />
     </div>
     <div class="itemContent">
       <div class="itemTitle">${book.bookTitle}</div>
