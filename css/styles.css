@@ -213,11 +213,6 @@ nav a {
   margin-top: -250px;
 }
 
-@media screen and (max-width: 390px) {
-  .homeContent {
-    border: 2px solid red;
-  }
-}
 .aboutSection {
   max-width: 1920px;
   min-height: 700px;
@@ -393,7 +388,7 @@ footer .footerSocials a .social img {
   font-size: 16px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.accountPanel .loginContainer .submit {
+.accountPanel .loginContainer .login {
   width: 170px;
   height: 45px;
   background-color: #587c83;
@@ -1214,6 +1209,23 @@ footer .footerSocials a .social img {
     border-bottom: 1px solid black;
     background-color: white;
   }
+}
+.logoutContainer {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  margin-top: 200px;
+  flex-direction: column;
+}
+.logoutContainer .logOut {
+  width: 170px;
+  height: 45px;
+  margin-top: 20px;
+  background-color: #587c83;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */

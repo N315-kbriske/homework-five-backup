@@ -1,5 +1,6 @@
 import * as MODEL from "./model.js";
 // import * as MODEL from "./model.js";
+let signedIn = false;
 
 function changeRoute() {
   let hashTag = window.location.hash;
@@ -11,6 +12,8 @@ function changeRoute() {
     MODEL.changePage(pageID, buyNow);
   } else if (pageID == "account") {
     MODEL.changePage(pageID, initSubmitListener);
+  } else if (pageID == "account" && signedIn == true) {
+    MODEL.changePage("account-logout", initSubmitListener);
   } else {
     MODEL.changePage(pageID);
   }
@@ -28,7 +31,19 @@ function changeRoute() {
   //     });
   //   }
 }
-function placeholder() {}
+function logOut() {
+  $(".logOut").on("click", function (e) {
+    console.log("logout");
+
+    alert("Thank you for signing out");
+    signedIn = false;
+
+    if (signedIn == false) {
+      MODEL.changePage("account", initSubmitListener);
+      console.log("L");
+    }
+  });
+}
 
 function logIn() {
   $(".login").on("click", function (e) {
@@ -39,10 +54,22 @@ function logIn() {
 
     $(".email").val("");
     $(".password").val("");
+
+    if (email == "") {
+      alert("enter data");
+    } else if (password == "") {
+      alert("enter data");
+    }
+    alert("Thank you for signing in");
+    signedIn = true;
+
+    if (signedIn == true) {
+      MODEL.changePage("home", initSubmitListener);
+    }
   });
 }
 
-function initSubmitListener() {
+function signUp() {
   $(".submit").on("click", function (e) {
     console.log("submit");
     //   trace("app.js", "submit");
@@ -76,14 +103,29 @@ function initSubmitListener() {
       $(".lName").val("");
       $(".signUpEmail").val("");
       $(".signUpPassword").val("");
+      signedIn = true;
+      alert("Thank you for signing up");
     }
     console.log(`${fn} ${ln} ${email} ${password}`);
-
-    // var signUp = open("home.html");
-    // signUp.alert("Thank you for signing up!");
-    // signUp.focus();
+    if (signedIn == true) {
+      MODEL.changePage("home", initSubmitListener);
+      console.log(signedIn);
+    }
   });
 }
+
+function initSubmitListener() {
+  logIn();
+  signUp();
+  logOut();
+  buyNow();
+}
+
+// function test() {
+//   $(".test").on("click", () => {
+//     console.log("test");
+//   });
+// }
 
 function trace(fileName, log) {
   console.log(fileName + " " + log);
@@ -95,6 +137,12 @@ function buyNow() {
     MODEL.addToCart(bookID);
     console.log(bookID);
   });
+
+  // $(".addBook").on("click", (e) => {
+  //   let bookID = e.currentTarget.id;
+  //   MODEL.addToCart(bookID);
+  //   console.log(bookID);
+  // });
 }
 
 function initURLListener() {
@@ -105,5 +153,6 @@ function initURLListener() {
 $(document).ready(function () {
   initSubmitListener();
   logIn();
+  logOut();
   initURLListener();
 });
